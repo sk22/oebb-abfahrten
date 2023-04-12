@@ -16,9 +16,9 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #69F7BE;
-  --color-text-main: #000000;
-  --color-primary: #FFFF00;
+  --color-bg: #1e007d;
+  --color-text-main: #FFFFFF;
+  --color-primary: #ffff00;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
@@ -112,6 +112,24 @@ END Glitch hello-app default styles
 body {
   font-family: HK Grotesk;
   background-color: var(--color-bg);
+  color: var(--color-text-main);
+}
+
+table {
+  border: none;
+  border-collapse: collapse;
+}
+
+table tr:nth-child(odd) {
+  background: #2938b9;
+}
+
+table td, table th {
+  padding: 8px;
+}
+
+a {
+  color: white;
 }
 
 /* Page structure */
