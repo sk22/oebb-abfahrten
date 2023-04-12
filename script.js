@@ -23,8 +23,9 @@ const operators = {
 
 Object.values(operators).forEach(op => {
   const img = document.createElement('img')
-  img.src = `https://meine.oebb.at/abfahrtankunft/webdisplay/assets/operators/${op}.jpg`
-  
+  img.className = 'operator'
+  img.src = `https://meine.oebb.at/abfahrtankunft/webdisplay/assets/operators/${op}`
+  operatorsDiv.appendChild(img)
 })
 
 fetch('./at.csv').then(async res => {
@@ -35,6 +36,7 @@ fetch('./at.csv').then(async res => {
     const tr = document.createElement('tr')
     const bhfTd = document.createElement('td')
     bhfTd.innerText = bhf[1];
+    bhfTd.className = 'station-name'
     tr.appendChild(bhfTd)
 
     const abfahrten = document.createElement('a')

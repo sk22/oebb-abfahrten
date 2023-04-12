@@ -113,6 +113,27 @@ body {
   font-family: HK Grotesk;
   background-color: var(--color-bg);
   color: var(--color-text-main);
+  margin: 0;
+}
+
+.operator {
+  height: 32px;
+}
+
+.operator + .operator {
+  margin-left: 4px;
+}
+
+#operators {
+  width: 100%;
+  background: white;
+  margin-bottom: 16px;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.station-name {
+  font-weight: bold;
 }
 
 table {
