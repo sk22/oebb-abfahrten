@@ -30,7 +30,6 @@ Object.values(operators).forEach(op => {
 
 fetch('./at.csv').then(async res => {
   const csv = await res.text()
-  console.log(csv)
   const bhfs = csv.split('\n').map(l => l.split(';'))
   bhfs.forEach(bhf => {
     const tr = document.createElement('tr')
