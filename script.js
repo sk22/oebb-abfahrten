@@ -28,26 +28,29 @@ Object.values(operators).forEach(op => {
   operatorsDiv.appendChild(img)
 })
 
-fetch('./at.csv').then(async res => {
+fetch('./oebb-db640-codes-2024.csv').then(async res => {
   const csv = await res.text()
-  const bhfs = csv.split('\n').map(l => l.split(';'))
+  const bhfs = csv.split('\n').slice(1).map(l => l.slice(1, -1).split('","'))
   bhfs.forEach(bhf => {
     const tr = document.createElement('tr')
     const bhfTd = document.createElement('td')
-    bhfTd.innerText = bhf[1];
+    bhfTd.innerText = bhf[0];
     bhfTd.className = 'station-name'
     tr.appendChild(bhfTd)
+    const code = bhf[1].replace(/\s+/g, '')
 
     const abfahrten = document.createElement('a')
     abfahrten.innerText = 'Abfahrten'
-    abfahrten.href = `https://meine.oebb.at/abfahrtankunft/departure?evaNr=${bhf[0]}&static=true`
+    abfahrten.href = `https://meine.oebb.at/abfahrtankunft/webdisplay/#/?stationId=${code}&contentType=departure&staticLayout=true`
+    // abfahrten.href = `https://meine.oebb.at/abfahrtankunft/departure?evaNr=${bhf[0]}&static=true`
     const abfahrtenTd = document.createElement('td')
     abfahrtenTd.appendChild(abfahrten)
     tr.appendChild(abfahrtenTd)
     
     const ankuenfte = document.createElement('a')
     ankuenfte.innerText = 'Ankünfte'
-    ankuenfte.href = `https://meine.oebb.at/abfahrtankunft/arrival?evaNr=${bhf[0]}&static=true`
+    ankuenfte.href = `https://meine.oebb.at/abfahrtankunft/webdisplay/#/?stationId=${code}&contentType=arrival&staticLayout=true`
+    // ankuenfte.href = `https://meine.oebb.at/abfahrtankunft/arrival?evaNr=${bhf[0]}&static=true`
     const ankuenfteTd = document.createElement('td')
     ankuenfteTd.appendChild(ankuenfte)
     tr.appendChild(ankuenfteTd)
