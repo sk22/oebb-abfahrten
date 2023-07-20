@@ -1,5 +1,7 @@
 const table = document.getElementById('bahnhoefe')
 const operatorsDiv = document.getElementById('operators')
+const search = document.getElementById('search')
+const rows = []
 
 // from https://meine.oebb.at/abfahrtankunft/webdisplay/config/config.js
 const operators = {
@@ -34,10 +36,11 @@ fetch('./oebb-db640-codes-2024.csv').then(async res => {
   bhfs.forEach(bhf => {
     const tr = document.createElement('tr')
     const bhfTd = document.createElement('td')
-    bhfTd.innerText = bhf[0];
+    const name = bhf[0]
+    const code = bhf[1].replace(/\s+/g, '')
+    bhfTd.innerText = name;
     bhfTd.className = 'station-name'
     tr.appendChild(bhfTd)
-    const code = bhf[1].replace(/\s+/g, '')
 
     const abfahrten = document.createElement('a')
     abfahrten.innerText = 'Abfahrten'
@@ -56,5 +59,13 @@ fetch('./oebb-db640-codes-2024.csv').then(async res => {
     tr.appendChild(ankuenfteTd)
 
     table.appendChild(tr)
+    rows.push({ code, name, tr })
+  })
+})
+
+search.addEventListener('keydown', (event) => {
+  const value = event.target.
+  rows.forEach(({ code, name, tr }) => {
+    i
   })
 })
