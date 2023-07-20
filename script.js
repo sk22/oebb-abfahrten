@@ -34,18 +34,27 @@ fetch('./oebb-db640-codes-2024.csv').then(async res => {
   const csv = await res.text()
   const bhfs = csv.split('\n').slice(1).map(l => l.slice(1, -1).split('","'))
   bhfs.forEach(bhf => {
-    const tr = document.createElement('tr')
-    const bhfTd = document.createElement('td')
     const name = bhf[0]
     const code = bhf[1].replace(/\s+/g, '')
+    rows.push([code, name])
+  })
+  renderRows()
+})
+
+const renderRows = (ev) => {
+  table.innerHTML = ''
+  const filter = search.value.toLowerCase()
+  rows.forEach(([code, name]) => {
+    if (!code.toLowerCase().includes(filter) && !name.toLowerCase().includes(filter)) return;
+
+    const tr = document.createElement('tr')
+    const bhfTd = document.createElement('td')
     bhfTd.innerText = name;
     bhfTd.className = 'station-name'
-    tr.appendChild(bhfTd)
-
     const abfahrten = document.createElement('a')
+    tr.appendChild(bhfTd)
     abfahrten.innerText = 'Abfahrten'
     abfahrten.href = `https://meine.oebb.at/abfahrtankunft/webdisplay/#/?stationId=${code}&contentType=departure&staticLayout=true`
-    // abfahrten.href = `https://meine.oebb.at/abfahrtankunft/departure?evaNr=${bhf[0]}&static=true`
     const abfahrtenTd = document.createElement('td')
     abfahrtenTd.appendChild(abfahrten)
     tr.appendChild(abfahrtenTd)
@@ -53,19 +62,12 @@ fetch('./oebb-db640-codes-2024.csv').then(async res => {
     const ankuenfte = document.createElement('a')
     ankuenfte.innerText = 'Ankünfte'
     ankuenfte.href = `https://meine.oebb.at/abfahrtankunft/webdisplay/#/?stationId=${code}&contentType=arrival&staticLayout=true`
-    // ankuenfte.href = `https://meine.oebb.at/abfahrtankunft/arrival?evaNr=${bhf[0]}&static=true`
     const ankuenfteTd = document.createElement('td')
     ankuenfteTd.appendChild(ankuenfte)
     tr.appendChild(ankuenfteTd)
 
     table.appendChild(tr)
-    rows.push({ code, name, tr })
   })
-})
+}
 
-search.addEventListener('keydown', (event) => {
-  const value = event.target.
-  rows.forEach(({ code, name, tr }) => {
-    i
-  })
-})
+search.addEventListener('input', renderRows)
