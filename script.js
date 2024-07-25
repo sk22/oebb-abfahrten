@@ -35,7 +35,7 @@ fetch('./oebb-db640-codes-2024.csv').then(async res => {
   const bhfs = csv.split('\n').slice(1).map(l => l.slice(1, -1).split('","'))
   bhfs.forEach(bhf => {
     const name = bhf[0]
-    const code = bhf[1].replace(/\s+/g, '')
+    const code = bhf[1].replace(/\s+/g, '').toUpperCase()
     rows.push([code, name])
   })
   renderRows()
@@ -54,7 +54,7 @@ const renderRows = (ev) => {
     const abfahrten = document.createElement('a')
     tr.appendChild(bhfTd)
     abfahrten.innerText = 'Abfahrten'
-    abfahrten.href = `https://meine.oebb.at/abfahrtankunft/webdisplay/#/?stationId=${code}&contentType=departure&staticLayout=true`
+    abfahrten.href = `https://meine.oebb.at/webdisplay/?stationId=${code}&contentType=departure&staticLayout=true&page=1&offset=0&ignoreIncident=false`
     const abfahrtenTd = document.createElement('td')
     abfahrtenTd.appendChild(abfahrten)
     tr.appendChild(abfahrtenTd)
