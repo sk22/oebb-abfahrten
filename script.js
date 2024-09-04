@@ -95,7 +95,7 @@ fetch('./oebb-db640-codes-2024.csv').then(async res => {
   renderRows()
 })
 
-const renderRows = (ev) => {
+const renderRows = () => {
   table.innerHTML = ''
   const filter = search.value.toLowerCase()
   rows.forEach(([code, name]) => {
@@ -103,10 +103,11 @@ const renderRows = (ev) => {
 
     const tr = document.createElement('tr')
     const bhfTd = document.createElement('td')
-    bhfTd.innerText = name;
+    bhfTd.innerText = name
     bhfTd.className = 'station-name'
-    const abfahrten = document.createElement('a')
     tr.appendChild(bhfTd)
+
+    const abfahrten = document.createElement('a')
     abfahrten.innerText = 'Abfahrten'
     abfahrten.href = `https://meine.oebb.at/webdisplay/?stationId=${code}&contentType=departure&staticLayout=true&page=1&offset=0&ignoreIncident=false`
     const abfahrtenTd = document.createElement('td')
@@ -119,6 +120,13 @@ const renderRows = (ev) => {
     const ankuenfteTd = document.createElement('td')
     ankuenfteTd.appendChild(ankuenfte)
     tr.appendChild(ankuenfteTd)
+    
+    const mobile = document.createElement('a')
+    mobile.innerText = 'Mobile'
+    mobile.href = `https://meine.oebb.at/webdisplay/?stationId=${code}&contentType=departure&staticLayout=false&page=1&offset=0&ignoreIncident=false`
+    const mobileTd = document.createElement('td')
+    mobileTd.appendChild(mobile)
+    tr.appendChild(mobileTd)
 
     table.appendChild(tr)
   })
