@@ -109,21 +109,21 @@ const renderRows = () => {
 
     const abfahrten = document.createElement('a')
     abfahrten.innerText = 'Abfahrten'
-    abfahrten.href = `https://meine.oebb.at/webdisplay/?stationId=${code}&contentType=departure&staticLayout=true&page=1&offset=0&ignoreIncident=false`
+    abfahrten.href = `https://meine.oebb.at/webdisplay/?stationId=${code}&contentType=departure&staticLayout=true&page=1&offset=0&ignoreIncident=true`
     const abfahrtenTd = document.createElement('td')
     abfahrtenTd.appendChild(abfahrten)
     tr.appendChild(abfahrtenTd)
     
     const ankuenfte = document.createElement('a')
     ankuenfte.innerText = 'Ankünfte'
-    ankuenfte.href = `https://meine.oebb.at/webdisplay/?stationId=${code}&contentType=arrival&staticLayout=true&page=1&offset=0&ignoreIncident=false`
+    ankuenfte.href = `https://meine.oebb.at/webdisplay/?stationId=${code}&contentType=arrival&staticLayout=true&page=1&offset=0&ignoreIncident=true`
     const ankuenfteTd = document.createElement('td')
     ankuenfteTd.appendChild(ankuenfte)
     tr.appendChild(ankuenfteTd)
     
     const mobile = document.createElement('a')
     mobile.innerText = 'Mobile'
-    mobile.href = `https://meine.oebb.at/webdisplay/?stationId=${code}&contentType=departure&staticLayout=false&page=1&offset=0&ignoreIncident=false`
+    mobile.href = `https://meine.oebb.at/webdisplay/?stationId=${code}&contentType=departure&staticLayout=false&page=1&offset=0&ignoreIncident=true`
     const mobileTd = document.createElement('td')
     mobileTd.appendChild(mobile)
     tr.appendChild(mobileTd)
