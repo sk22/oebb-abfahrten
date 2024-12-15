@@ -84,9 +84,11 @@ new Set(Object.values(operators)).forEach(op => {
   operatorsDiv.appendChild(img)
 })
 
-fetch('./oebb-db640-codes-2024.csv').then(async res => {
+fetch('./oebb-db640-codes-2025.csv').then(async res => {
   const csv = await res.text()
-  const bhfs = csv.split('\n').slice(1).map(l => l.slice(1, -1).split('","'))
+  const bhfs = csv.split('\n').slice(1).map(l =>
+    l.split(',').map(f => f.length ? JSON.parse(f) : null)
+  )
   bhfs.forEach(bhf => {
     const name = bhf[0]
     const code = bhf[1].replace(/\s+/g, '').toUpperCase()
