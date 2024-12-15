@@ -86,9 +86,14 @@ new Set(Object.values(operators)).forEach(op => {
 
 fetch('./oebb-db640-codes-2025.csv').then(async res => {
   const csv = await res.text()
-  const bhfs = csv.split('\n').slice(1).map(l =>
-    l.split(',').map(f => f.length ? JSON.parse(f) : null)
-  )
+  const bhfs = csv.split('\n').slice(1)
+    .filter(l => l.startsWith('"'))
+    .map(l => l
+      // slicing from start to end of second field
+      .slice(0, l.indexOf('",', l.indexOf('","') + 3) + 1)
+                        // ^ end of 2nd    ^ end of 1st
+      .split(',').map(JSON.parse)
+    )
   bhfs.forEach(bhf => {
     const name = bhf[0]
     const code = bhf[1].replace(/\s+/g, '').toUpperCase()
