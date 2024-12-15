@@ -88,16 +88,15 @@ fetch('./oebb-db640-codes-2025.csv').then(async res => {
   const csv = await res.text()
   const bhfs = csv.split('\n').slice(1)
     .filter(l => l.startsWith('"'))
-    .map(l => l
+    .map(l => [l, l
       // slicing from start to end of second field
       .slice(0, l.indexOf('",', l.indexOf('","') + 3) + 1)
                         // ^ end of 2nd    ^ end of 1st
       .split(',').map(JSON.parse)
-    )
-  bhfs.forEach(bhf => {
-    const name = bhf[0]
-    const code = bhf[1].replace(/\s+/g, '').toUpperCase()
-    rows.push([code, name, bhf[1]])
+    ])
+  bhfs.forEach(([line, [name, bstCode]]) => {
+    const code = bstCode.replace(/\s+/g, '').toUpperCase()
+    rows.push([code, name, bstCode, line])
   })
   renderRows()
 })
@@ -105,8 +104,8 @@ fetch('./oebb-db640-codes-2025.csv').then(async res => {
 const renderRows = () => {
   table.innerHTML = ''
   const filter = search.value.toLowerCase()
-  rows.forEach(([code, name, bstCode]) => {
-    if (!bstCode.toLowerCase().includes(filter) && !name.toLowerCase().includes(filter)) return;
+  rows.forEach(([code, name, bstCode, line]) => {
+    if (!line.toLowerCase().includes(filter)) return;
 
     const tr = document.createElement('tr')
     const bhfTd = document.createElement('td')
