@@ -94,9 +94,8 @@ fetch('./oebb-db640-codes-2025.csv').then(async res => {
                         // ^ end of 2nd    ^ end of 1st
       .split(',').map(JSON.parse)
     ])
-  bhfs.forEach(([line, [name, bstCode]]) => {
-    const code = bstCode.replace(/\s+/g, '').toUpperCase()
-    rows.push([code, name, bstCode, line])
+  bhfs.forEach(([line, [name, code]]) => {
+    rows.push([code.replace(/\s+/g, ' '), name, line])
   })
   renderRows()
 })
@@ -104,12 +103,12 @@ fetch('./oebb-db640-codes-2025.csv').then(async res => {
 const renderRows = () => {
   table.innerHTML = ''
   const filter = search.value.toLowerCase()
-  rows.forEach(([code, name, bstCode, line]) => {
+  rows.forEach(([code, name, line]) => {
     if (!line.toLowerCase().includes(filter)) return;
 
     const tr = document.createElement('tr')
     const bhfTd = document.createElement('td')
-    bhfTd.innerHTML = `<strong>${name}</strong> <small>${bstCode}</small>`
+    bhfTd.innerHTML = `<strong>${name}</strong> <small>${code}</small>`
     bhfTd.className = 'station-name'
     tr.appendChild(bhfTd)
 
