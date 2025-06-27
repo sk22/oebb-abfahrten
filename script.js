@@ -95,7 +95,7 @@ fetch('./oebb-db640-codes-2025.csv').then(async res => {
       .split(',').map(JSON.parse)
     ])
   bhfs.forEach(([line, [name, code]]) => {
-    rows.push([code.replace(/\s+/g, ' '), name, line])
+    rows.push([code, name, line])
   })
   renderRows()
 })
@@ -104,7 +104,10 @@ const renderRows = () => {
   table.innerHTML = ''
   const filter = search.value.toLowerCase()
   rows.forEach(([code, name, line]) => {
-    if (!line.toLowerCase().includes(filter)) return;
+    if (!line.toLowerCase().includes(filter)) return
+    // intentionally removing one space
+    // "Gae H1" → "GaeH1", "Nw  H2" → "Nw H2"
+    const stationId = code.replace(' ', '')
 
     const tr = document.createElement('tr')
     const bhfTd = document.createElement('td')
@@ -114,21 +117,21 @@ const renderRows = () => {
 
     const abfahrten = document.createElement('a')
     abfahrten.innerText = 'Abfahrten'
-    abfahrten.href = `https://meine.oebb.at/webdisplay/?stationId=${code}&contentType=departure&staticLayout=true&page=1&offset=0&ignoreIncident=true`
+    abfahrten.href = `https://meine.oebb.at/webdisplay/?stationId=${stationId}&contentType=departure&staticLayout=true&page=1&offset=0&ignoreIncident=true`
     const abfahrtenTd = document.createElement('td')
     abfahrtenTd.appendChild(abfahrten)
     tr.appendChild(abfahrtenTd)
     
     const ankuenfte = document.createElement('a')
     ankuenfte.innerText = 'Ankünfte'
-    ankuenfte.href = `https://meine.oebb.at/webdisplay/?stationId=${code}&contentType=arrival&staticLayout=true&page=1&offset=0&ignoreIncident=true`
+    ankuenfte.href = `https://meine.oebb.at/webdisplay/?stationId=${stationId}&contentType=arrival&staticLayout=true&page=1&offset=0&ignoreIncident=true`
     const ankuenfteTd = document.createElement('td')
     ankuenfteTd.appendChild(ankuenfte)
     tr.appendChild(ankuenfteTd)
     
     const mobile = document.createElement('a')
     mobile.innerText = 'Mobile'
-    mobile.href = `https://meine.oebb.at/webdisplay/?stationId=${code}&contentType=departure&staticLayout=false&page=1&offset=0&ignoreIncident=true`
+    mobile.href = `https://meine.oebb.at/webdisplay/?stationId=${stationId}&contentType=departure&staticLayout=false&page=1&offset=0&ignoreIncident=true`
     const mobileTd = document.createElement('td')
     mobileTd.appendChild(mobile)
     tr.appendChild(mobileTd)
