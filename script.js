@@ -33,21 +33,13 @@ for (const op of operators) {
 	operatorsDiv.appendChild(img);
 }
 
-fetch("./oebb-db640-codes.csv").then(async (res) => {
+fetch("./oebb-db640-codes.tsv").then(async (res) => {
 	const csv = await res.text();
 	const bhfs = csv
 		.split("\n")
 		.slice(1)
-		.filter((l) => l.startsWith('"'))
-		.map((l) => [
-			l,
-			l
-				// slicing from start to end of second field
-				.slice(0, l.indexOf('",', l.indexOf('","') + 3) + 1)
-				// ^ end of 2nd    ^ end of 1st
-				.split(",")
-				.map(JSON.parse),
-		]);
+		.filter((l) => l.length)
+		.map((l) => [l, l.split("	")]);
 	bhfs.forEach(([line, [name, code]]) => {
 		rows.push([code, name, line]);
 	});

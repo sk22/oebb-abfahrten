@@ -1,29 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>ÖBB Abfahrten/Ankünfte</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="operators"></div>
+        <div class="wrapper search">
+            <input type="search" id="search" placeholder="Search…" />
+        </div>
+        <div class="wrapper list">
+            <table id="bahnhoefe"></table>
+        </div>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-    <title>ÖBB Abfahrten/Ankünfte</title>
-    <link rel="stylesheet" href="/style.css" />
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <div id="operators"></div>
-    <div class="wrapper search">
-      <input type="search" id="search" placeholder="Search…" /> 
-    </div>
-    <div class="wrapper list">
-      <table id="bahnhoefe"></table>
-    </div>
-
-    <footer class="wrapper footer">
-      <p>Quelle DB 640-Codes: <a href="https://infrastruktur.oebb.at/de/geschaeftspartner/schienennetz/snnb/snnb-2025/anhaenge-2025.pdf">ÖBB SNNB 2025 Anhänge: 2.3.3 Verzeichnis der Verkehrsstationen / Station register</a></p>
-    </footer>
-  </body>
+        <footer class="wrapper footer">
+            <p>
+                Quelle DB 640-Codes:
+                <a
+                    href="https://infrastruktur.oebb.at/de/geschaeftspartner/schienennetz/snnb/snnb-2025/anhaenge-2025.pdf"
+                    >ÖBB SNNB 2025 Anhänge: 2.3.3 Verzeichnis der
+                    Verkehrsstationen / Station register</a
+                >
+            </p>
+        </footer>
+    </body>
 </html>
