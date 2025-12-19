@@ -1,4 +1,4 @@
-Verkehrsstation	BST Code	BST ID	Produktnummer 2025	Anmerkung	Bundesland (inkl. Liechtenstein)
+Verkehrsstation	BST Code	BST ID	Produktnummer 2026	Anmerkung	Bundesland (inkl. Liechtenstein)
 Abfaltersbach	Abf H1	5517155	3.d		Tirol
 Absdorf-Hippersdorf	Ah	17	3.c		Niederösterreich
 Achau	Ach	11	3.c		Niederösterreich
@@ -11,6 +11,7 @@ Aisthofen	P   H1	1652	3.d		Oberösterreich
 Allentsteig	All	41	3.d		Niederösterreich
 Allerheiligenhöfe	Ih  H1	938	3.d		Tirol
 Allerheiligen-Mürzhofen	Ki  H1	1033	3.d		Steiermark
+Alling-Tobisegg	Lnn H2	1253	3.d		Steiermark
 Altach	Got H1	676	3.c		Vorarlberg
 Altenhof	Plk H1	1716	3.d		Niederösterreich
 Altenmarkt im Pongau	Rad K1	1810	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich	Salzburg
@@ -26,7 +27,7 @@ Arbing	Arb	80	3.d		Oberösterreich
 Ardning	Ar	79	3.d		Steiermark
 Arnoldstein	Dr	296	3.d		Kärnten
 Aschbach Haltestelle	Ams H2	1265643	3.d		Niederösterreich
-Aspang	Ap	75	3.d		Niederösterreich
+Aspang Markt	Ap	75	3.d		Niederösterreich
 Asten-Fisching	Ens H1	1397220	3.c		Oberösterreich
 Attnang-Puchheim	At	91	3.b		Oberösterreich
 Atzenbrugg	Tfd H2	1387	3.d		Niederösterreich
@@ -39,9 +40,9 @@ Bad Deutsch Altenburg	Bde	143	3.d		Niederösterreich
 Bad Erlach	Ela	359	3.d		Niederösterreich
 Bad Fischau	Fwa H1	442	3.d		Niederösterreich
 Bad Fischau-Brunn	Fib	440	3.d		Niederösterreich
-Bad Gastein	Bag	121	3.d		Salzburg
+Bad Gastein	Bag	121	3.c		Salzburg
 Bad Goisern	Stg H1	666	3.d		Oberösterreich
-Bad Hofgastein	Hg	826	3.d		Salzburg
+Bad Hofgastein	Hg	826	3.c		Salzburg
 Bad Ischl	Il	940	3.d		Oberösterreich
 Bad Mitterndorf	Bam	127	3.d		Steiermark
 Bad Mitterndorf-Heilbrunn	Bam H1	128	3.d		Steiermark
@@ -49,10 +50,12 @@ Bad Radkersburg	Ra	1805	3.d		Steiermark
 Bad Ried	Rd  H1M	1825	3.d		Oberösterreich
 Bad Sauerbrunn	Sau	1939	3.d		Burgenland
 Bad Schallerbach-Wallern	Wa	2365	3.c		Oberösterreich
+Bad Schwanberg	Dlb H2	2175	3.d		Steiermark
 Bad Vigaun	Hl  H2A	843	3.c		Salzburg
 Bad Vöslau	Bvs	253	3.c		Niederösterreich
 Bad Waltersdorf	Seb H1	1973	3.d		Steiermark
 Baden	Bf  H1	149	3.c		Niederösterreich
+Bärnbach	Vob K3	131	3.d		Steiermark
 Baumgartenberg	Bb	130	3.d		Oberösterreich
 Berg im Drautal	De  H1	273	3.d		Kärnten
 Bergern	Otg H1	1644	3.d		Oberösterreich
@@ -64,8 +67,8 @@ Bichlbach-Berwang	Bch	139	3.d		Tirol
 Bierbaum	Bib	170	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich	Steiermark
 Bisamberg	F   H3S	960	3.d		Niederösterreich
 Bischofshofen	Bo	199	3.c		Salzburg
-Bleiburg	Ble	173	3.c		Kärnten
-Bleiburg Stadt	Blg	388	3.d		Kärnten
+Bleiburg/Pliberk	Ble	173	3.c		Kärnten
+Bleiburg Stadt/Pliberk mesto	Blg	388	3.d		Kärnten
 Blindenmarkt	Kar H2	177	3.c		Niederösterreich
 Bludenz	B	116	3.c		Vorarlberg
 Böckstein	Bs	235	3.d	nur Verkehre der Autoschleuse Tauernbahn	Salzburg
@@ -93,7 +96,8 @@ Dechantskirchen	Fd  H1H	415	3.d		Steiermark
 Dellach im Drautal	De	272	3.d		Kärnten
 Deutsch Wagram	Wg	2447	3.c		Niederösterreich
 Deutschkreutz	Dk	278	3.d		Burgenland
-Diensthubersiedlung	Voi H3	2343	3.d	Ab Netzfahrplanperiode 2025 wird die Station nicht mehr angeboten.	Oberösterreich
+Deutschlandsberg Stadt	Dlb	281	3.c		Steiermark
+Dietmannsdorf	Bgl H1	158	3.d		Steiermark
 Dietrichshofen	Ant H1	69	3.d		Oberösterreich
 Dölsach	Doe	291	3.d		Tirol
 Donnerskirchen	Sag H2	1778	3.d		Burgenland
@@ -113,7 +117,7 @@ Ebenfurth	Ef	325	3.d		Niederösterreich
 Ebensee	En	363	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich	Oberösterreich
 Ebensee Landungsplatz	En  H1	364	3.d		Oberösterreich
 Eberschwang	Otg H4	390	3.d		Oberösterreich
-Ebreichsdorf	Ebr	309	3.d		Niederösterreich
+Ebreichsdorf	Ebr	309	3.c		Niederösterreich
 Edlitz-Grimmenstein	Edl	321	3.d		Niederösterreich
 Eggenburg	Egg	336	3.d		Niederösterreich
 Ehrenhausen	Rzn H1	1910	3.d		Steiermark
@@ -130,7 +134,7 @@ Enzersdorf bei Staatz	Enz	373	3.d		Niederösterreich
 Enzesfeld-Lindabrunn	Ez	394	3.d		Niederösterreich
 Erlauf	Erf	379	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich	Niederösterreich
 Ernsthofen	Ern	383	3.d		Niederösterreich
-Eschenau	Ld  H1	1176	3.d		Salzburg
+Eschenau	Ld  H1	1176	3.d	Ab Netzfahrplanperiode 2027 wird die Station voraussichtlich nicht mehr angeboten.	Salzburg
 Etsdorf-Straß	Edo	324	3.d		Niederösterreich
 Eugendorf	See H2	1977	3.d		Salzburg
 Faak am See	Fas	403	3.d		Kärnten
@@ -157,6 +161,7 @@ Franckstraße	Lfs	1204	3.d		Oberösterreich
 Frankenmarkt	Fm	474	3.d		Oberösterreich
 Frastanz	Fa	401	3.d		Vorarlberg
 Frättingsdorf	Ft	510	3.d		Niederösterreich
+Frauental-Bad Gams	Frt	505	3.d		Steiermark
 Freistadt	Fr	486	3.d		Oberösterreich
 Friedberg	Fd	412	3.d		Steiermark
 Friedburg	Nsf	496	3.d		Oberösterreich
@@ -165,11 +170,11 @@ Fritzens-Wattens	Fw	517	3.d		Tirol
 Frohnleiten	Fro	502	3.c		Steiermark
 Fürnitz	Fn	481	3.d		Kärnten
 Fürstenfeld	Fue	512	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich	Steiermark
-Furth	Mho H1	1408	3.d	Ab Netzfahrplanperiode 2025 wird die Station nicht mehr angeboten.	Oberösterreich
 Furth-Göttweig	Fh  H1	431	3.d		Niederösterreich
 Furth-Palt	Fh	430	3.d		Niederösterreich
 Gaflenz	Ob  H2	1599	3.d		Oberösterreich
 Gaisbach-Wartberg	Ga	545	3.d		Oberösterreich
+Gaisfeld	Kro H1	1088	3.d	Ab Netzfahrplanperiode 2026 wird die Station nicht mehr angeboten.	Steiermark
 Gaishorn	Gai	553	3.d		Steiermark
 Gaisruck	Hui H1	2143	3.d		Niederösterreich
 Gänserndorf	Gae	547	3.c		Niederösterreich
@@ -181,7 +186,7 @@ Geinberg	Gur H1	746	3.d		Oberösterreich
 Geiselbergstraße	Sah H1	1251761	3.c		Wien
 Gemeinlebarn	Mos H3	1449	3.d		Niederösterreich
 Gerasdorf	Gef	570	3.c		Niederösterreich
-Gerling im Pinzgau	Z   H1	2544	3.d		Salzburg
+Gerling im Pinzgau	Z   H1	2544	3.d	Ab Netzfahrplanperiode 2027 wird die Station voraussichtlich nicht mehr angeboten.	Salzburg
 Gerling OÖ	Rog H2	1880	3.d		Oberösterreich
 Gersthof	Ht  H3	904	3.c		Wien
 Getzersdorf	Tra H1	2252	3.d		Niederösterreich
@@ -213,9 +218,13 @@ Gramatneusiedl	Gn	642	3.c		Niederösterreich
 Gratwein-Gratkorn	Gw	747	3.d		Steiermark
 Graz Don Bosco	Gdb	2566531	3.c		Steiermark
 Graz Hbf	G	541	3.a		Steiermark
+Graz Köflacherbf	Gkf	608	3.c		Steiermark
 Graz Liebenau-Murpark	Gob H1	1730	3.d		Steiermark
 Graz Ostbf-Messe	Gob	652	3.c		Steiermark
 Graz Puntigam	Pu	1769	3.c		Steiermark
+Graz Straßgang	Sgg	2001	3.d		Steiermark
+Graz Webling	Gkf H2	611	3.d		Steiermark
+Graz Wetzelsdorf	Gkf H1	610	3.d		Steiermark
 Greifenburg-Weißensee	Gre	689	3.d		Kärnten
 Greifenstein-Altenberg	Kz  H2	1119	3.d		Niederösterreich
 Grein Stadt	Ges	579	3.d		Oberösterreich
@@ -227,9 +236,10 @@ Grieskirchen-Gallspach	Gk	601	3.c		Oberösterreich
 Grieswirt	Hch H3	445	3.d		Tirol
 Gröbming	Grb	686	3.d		Steiermark
 Groß Sierning	Sie	1676	3.d		Niederösterreich
-Groß Weikersdorf	Wk	2472	3.d		Niederösterreich
+Groß St.Florian	Gfl	584	3.d		Steiermark
 Großendorf	Gdf	563	3.d		Oberösterreich
 Großraming	Rei H2	700	3.d		Oberösterreich
+Großweikersdorf	Wk	2472	3.d		Niederösterreich
 Grünau im Almtal	Gue	736	3.d		Oberösterreich
 Grünbach am Schneeberg	Gru	706	3.d		Niederösterreich
 Grünbach Kohlenwerk	Gru H2	709	3.d		Niederösterreich
@@ -238,9 +248,10 @@ Gstatterboden im Nationalpark	Gb	557	3.d	Bestellung als Bedarfshalt iSd. § 121 
 Gumpoldskirchen	Md  H2	1379	3.d		Niederösterreich
 Gunskirchen	Gun	742	3.d		Oberösterreich
 Guntersdorf	Gud	734	3.d		Niederösterreich
-Guntramsdorf-Kaiserau Haltestelle	Guk H1	740	3.d		Niederösterreich
 Guntramsdorf Thallern	Md  H1	1378	3.d		Niederösterreich
+Guntramsdorf-Kaiserau Haltestelle	Guk H1	740	3.d		Niederösterreich
 Gurten	Gur	745	3.d		Oberösterreich
+Gussendorf	Wtt H1	1790	3.d		Steiermark
 Gutenstein	Gt	722	3.d		Niederösterreich
 Hadersdorf am Kamp	Hfa	820	3.c		Niederösterreich
 Hagenau im Innkreis	Mig H1	1419	3.d		Oberösterreich
@@ -269,7 +280,7 @@ Haslau an der Donau	Hlu	850	3.d		Niederösterreich
 Hatlerdorf	Hos H1	886	3.d		Vorarlberg
 Hatting	Zl  H2	2569	3.d		Tirol
 Hatzendorf	Sou H2	2053	3.d		Steiermark
-Haus	Hau	784	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich	Steiermark
+Haus	Hau	784	3.d		Steiermark
 Hausleiten	Hui	2144	3.d		Niederösterreich
 Hausruck	Otg H3	896	3.d		Oberösterreich
 Hautzendorf	Snb H1	2041	3.d		Niederösterreich
@@ -299,15 +310,15 @@ Hohenau	Nh	1543	3.d		Niederösterreich
 Hohenbrugg a.d.Raab	Feg H1	419	3.d		Steiermark
 Hohenems	Hos	884	3.c		Vorarlberg
 Hollabrunn	Oh	1617	3.c		Niederösterreich
+Hollenegg	Dlb H1	282	3.d		Steiermark
 Holzleithen	Otg H2	883	3.d		Oberösterreich
 Hopfgarten	Hp	890	3.d		Tirol
 Hopfgarten Berglift	Kit H3	2433	3.d		Tirol
 Hörersdorf	Mb  H3	1372	3.d		Niederösterreich
-Horn	Hna	855	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Niederösterreich
+Horn	Hna	855	3.d		Niederösterreich
 Hörsching	Hoe	869	3.d		Oberösterreich
 Hötzelsdorf-Geras	Hgr	829	3.d		Niederösterreich
-Hüttau	Hue H1	5701084	3.d	Ab Netzfahrplanperiode 2025 wird die Station angeboten (Ersatz für Hüttau Terminal)	Salzburg
-Hüttau Terminal	Hue	919	3.d	Ab Netzfahrplanperiode 2025 wird die Station nicht mehr angeboten.(Ersatz wird neue Hst. Hüttau Ort). Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Salzburg
+Hüttau	Hue H1	5701084	3.d		Salzburg
 Iglmühle	Nef H2	1516	3.d		Oberösterreich
 Imsterberg	Im  H1	946	3.d		Tirol
 Imst-Pitztal	Im	942	3.d		Tirol
@@ -331,7 +342,7 @@ Kainisch	Kai	995	3.d		Steiermark
 Kaiserebersdorf	Kls	1059	3.c		Wien
 Kalsdorf	Kal	997	3.c		Steiermark
 Kalwang	Kag	992	3.d		Steiermark
-Kamegg	Hna H3	1818	3.d	Ab Netzfahrplanperiode 2025 erfolgt die Inbetriebnahme der Station in neuer Lage	Niederösterreich
+Kamegg	Hna H3	1818	3.d		Niederösterreich
 Kammern	Sei H1	1981	3.d		Steiermark
 Kammer-Schörfling	Kms	1064	3.d		Oberösterreich
 Kapellerfeld	Gef H1	571	3.d		Niederösterreich
@@ -345,11 +356,11 @@ Kefermarkt	Kf	1024	3.d		Oberösterreich
 Kematen in Tirol	Vl  H1	2330	3.d		Tirol
 Kematen-Piberbach	Kek	1015	3.d		Oberösterreich
 Kimpling	Neu H1	1529	3.d		Oberösterreich
-Kindberg	Ki	1032	3.d		Steiermark
+Kindberg	Ki	1032	3.c		Steiermark
 Kirchberg am Wagram	Kch	1007	3.c		Niederösterreich
 Kirchberg in Tirol	Kit	1046	3.c		Tirol
 Kirchbichl	Kir	1044	3.d		Tirol
-Kirchdorf a.d.Krems	Kik	1039	3.d		Oberösterreich
+Kirchdorf a.d.Krems	Kik	1039	3.c		Oberösterreich
 Kirchstetten	Krt	1090	3.c		Niederösterreich
 Kittsee	Ktt	1103	3.d		Burgenland
 Kitzbühel	Kzb	1120	3.c		Tirol
@@ -363,7 +374,7 @@ Klagenfurt Süd	Kts	5091980	3.d		Kärnten
 Klagenfurt West	Kt  H2	5091977	3.d		Kärnten
 Klamm-Schottwien	Eib H1	1093	3.d		Niederösterreich
 Klaus	Kus	1111	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Oberösterreich
-Klaus in Vorarlberg	Rk  H2	1860	3.d		Vorarlberg
+Klaus in Vorarlberg	Rk  H2	1860	3.c		Vorarlberg
 Kleblach-Lind	Kel	1016	3.d		Kärnten
 Kledering	Za	2548	3.d		Niederösterreich
 Kleinreifling	Kg	1031	3.d		Oberösterreich
@@ -371,7 +382,9 @@ Kleinzell	Nen H1	1520	3.d		Oberösterreich
 Klosterneuburg-Kierling	Ken H1	1020	3.d		Niederösterreich
 Klosterneuburg-Weidling	Ken	1019	3.d		Niederösterreich
 Knittelfeld	Kd	1008	3.c		Steiermark
+Köflach	Kfl	1029	3.d		Steiermark
 Kolbnitz	Kl	1050	3.d		Kärnten
+Köppling	Smk H1	2033	3.d		Steiermark
 Korneuburg	Ko	1066	3.c		Niederösterreich
 Köstendorf Weng	Nst H1	1576	3.d		Salzburg
 Kothmühle	Ssm H1	2086	3.d		Oberösterreich
@@ -382,12 +395,14 @@ Kranebitten	Ih  H2	939	3.d		Tirol
 Kraubath	Kra	1078	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Steiermark
 Kreisbach	Trn H3	2257	3.d		Niederösterreich
 Krems a.d.Donau	Kr	1076	3.c		Niederösterreich
+Krems in Steiermark	Kro K1	1089	3.d		Steiermark
 Kremsmünster	Kre	1084	3.d		Oberösterreich
 Krenstetten-Biberbach	Ams H3	5	3.d		Niederösterreich
 Krieglach	Ke	1014	3.d		Steiermark
 Kritzendorf	Kz	1113	3.d		Niederösterreich
 Kröllendorf	Ul  H1	2287	3.d		Niederösterreich
 Krottenbachstraße	Ht  H2	903	3.c		Wien
+Krottendorf-Ligist	Kro	1087	3.d		Steiermark
 Krummnußbaum	Poe H1	1060	3.d		Niederösterreich
 Krumpendorf	Krd	1082	3.c		Kärnten
 Küb	Pr  H1	1742	3.d		Niederösterreich
@@ -407,9 +422,10 @@ Lambach Markt	La  H1	1129	3.d		Oberösterreich
 Landeck-Zams	Le	1180	3.c		Tirol
 Langen am Arlberg	Lan	1149	3.c		Vorarlberg
 Langenlebarn	Aw  H3	111	3.d		Niederösterreich
-Langenlois	Lis	1234	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Niederösterreich
+Langenlois	Lis	1234	3.d		Niederösterreich
 Langenwang	Mz  H2	1489	3.c		Steiermark
 Langenzersdorf	F   H2S	959	3.c		Niederösterreich
+Lannach	Lnn	1252	3.c		Steiermark
 Lanzendorf-Rannersdorf	Zs	2578	3.d		Niederösterreich
 Lanzenkirchen	Kw	1112	3.d		Niederösterreich
 Lasberg-St.Oswald	Kf  H1	1025	3.d		Oberösterreich
@@ -441,6 +457,8 @@ Leopoldau	Lp	1266	3.c		Wien
 Lermoos	Ler	1196	3.d		Tirol
 Lichendorf	Sd  H2	1968	3.d		Steiermark
 Liebenfels Haltestelle	Vs  H2	2649	3.d		Kärnten
+Lieboch	Lbo	1166	3.c		Steiermark
+Lieboch Schadendorf	Lbo H1	1169	3.d		Steiermark
 Lienz	Lie	1217	3.c		Tirol
 Lienz-Peggetz	Lie H1	4749447	3.d		Tirol
 Liesing	Lg	1205	3.c		Wien
@@ -469,7 +487,7 @@ Mandling	Mdg	1385	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV
 Mannswörth	Msw	713	3.d		Niederösterreich
 Marchegg	Mac	1318	3.c		Niederösterreich
 Marchtrenk	Mak	1324	3.d		Oberösterreich
-Maria Anzbach	Hu  H2	912	3.d		Niederösterreich
+Maria Anzbach	Hu  H2	912	3.c		Niederösterreich
 Maria Ellend	Mae	1319	3.d		Niederösterreich
 Maria Lanzendorf	Mar	1341	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Niederösterreich
 Maria Rain	Mrn	1456	3.d		Kärnten
@@ -490,7 +508,7 @@ Mautbrücken	Gla H1	619	3.d		Kärnten
 Mautern	Mu	1466	3.d		Steiermark
 Mauthausen	Mh	1401	3.d		Oberösterreich
 Melk	Los H1	1433	3.c		Niederösterreich
-Micheldorf	Mid	1413	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Oberösterreich
+Micheldorf	Mid	1413	3.c		Oberösterreich
 Micheldorf-Hirt	Fi  H1	436	3.d		Kärnten
 Michelhausen	Tfd H1	1386	3.d		Niederösterreich
 Miesenbach-Waidmannsfeld	Oed H1	1610	3.d		Niederösterreich
@@ -523,7 +541,7 @@ Nendeln	Nd	1507	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV n
 Nenzing	Lt  K1	1278	3.d		Vorarlberg
 Nettingsdorf	Net	1526	3.d		Oberösterreich
 Neubau-Kreuzstetten	N	1495	3.d		Niederösterreich
-Neudorf	Par H1	1661	3.d		Burgenland
+Neudorf/Novo Selo	Par H1	1661	3.d		Burgenland
 Neudörfl	Nel	1518	3.d		Burgenland
 Neufelden	Nef	1514	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Oberösterreich
 Neuhaus a.d.Gail	Fn  H1	2356	3.d		Kärnten
@@ -551,7 +569,6 @@ Nötsch	Noe	1564	3.d		Kärnten
 Nußbach	Wak H1	2377	3.d		Oberösterreich
 Nußdorf	Nf	1534	3.d		Wien
 Nüziders	B   H1	117	3.d		Vorarlberg
-Ober Olberndorf	Su  H1	2142	3.d		Niederösterreich
 Ober Piesting	Op	1626	3.d		Niederösterreich
 Ober Radlberg	Ho  H1	862	3.d		Niederösterreich
 Ober Waltersdorf	Ti  H1	2221	3.d		Niederösterreich
@@ -565,6 +582,7 @@ Oberhofen-Zell am Moos	Edb H1	318	3.d		Oberösterreich
 Oberland Haltestelle	Ob  H1H	5275915	3.d		Oberösterreich
 Obernberg-Altheim	Ath	95	3.d		Oberösterreich
 Oberndorf in Tirol	Jti H1	981	3.d		Tirol
+Oberolberndorf	Su  H1	2142	3.d		Niederösterreich
 Obersdorf Haltestelle	Gef H3	573	3.c		Niederösterreich
 Obersee	Oa  H2	1597	3.d		Oberösterreich
 Oberthalheim-Timelkam	Vk  H1	2327	3.d		Oberösterreich
@@ -576,6 +594,7 @@ Oberweiden	On	1625	3.d		Niederösterreich
 Oed	Oed	1609	3.d		Niederösterreich
 Oepping	Oep	1611	3.d		Oberösterreich
 Oftering	Hoe H1	870	3.d		Oberösterreich
+Oisnitz-St.Josef	Lnn H1	1254	3.d		Steiermark
 Ollersbach	Nl  H1	1559	3.d		Niederösterreich
 Ortmann	Ort	1636	3.d		Niederösterreich
 Ossiach-Bodensdorf	Oi	1618	3.d		Kärnten
@@ -584,13 +603,13 @@ Ottensheim	Ott	1646	3.d		Oberösterreich
 Ottnang-Wolfsegg	Otg	1643	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Oberösterreich
 Ötztal	Oz	1649	3.d		Tirol
 Paasdorf	Ldf H1	1496	3.d		Niederösterreich
-Pama	Gtt H1	727	3.d		Burgenland
-Parndorf	Par	1660	3.d		Burgenland
-Parndorf Ort	Apo H1	1240762	3.c		Burgenland
+Pama/Bijelo Selo	Gtt H1	727	3.d		Burgenland
+Parndorf/Pandrof	Par	1660	3.d		Burgenland
+Parndorf Ort/Pandrof mjesto	Apo H1	1240762	3.c		Burgenland
 Pasching	Lz  H2	1298	3.d		Oberösterreich
 Passering	Tr  H2	2247	3.d		Kärnten
-Paternion-Feistritz Haltestelle	Pf  H1	5078010	3.d		Kärnten
-Patsch	I   H2	930	3.d	Ab Netzfahrplanperiode 2026 wird die Station voraussichtlich nicht mehr angeboten.	Tirol
+Paternion-Feistritz	Pf  H1	5078010	3.d		Kärnten
+Patsch	I   H2	930	3.d	Ab Netzfahrplanperiode 2026 wird die Station nicht mehr angeboten.	Tirol
 Paudorf	Pau	1665	3.d		Niederösterreich
 Payerbach-Reichenau	Pr	1741	3.c		Niederösterreich
 Peggau-Deutschfeistritz	Pg	1698	3.c		Steiermark
@@ -623,6 +642,7 @@ Platt	Gud H1	735	3.d		Niederösterreich
 Pöchlarn	Poe	1725	3.c		Niederösterreich
 Pöckau	Vw  H1	2357	3.d		Kärnten
 Pöham	Ph	1702	3.d		Salzburg
+Pölfing-Brunn	Bgl H1A	1695	3.d		Steiermark
 Pöndorf	Fm  H1	475	3.d		Oberösterreich
 Pörtschach am Wörthersee	Pow	1731	3.c		Kärnten
 Pottenbrunn	Wgm	1762	3.d		Niederösterreich
@@ -630,7 +650,9 @@ Pottendorf-Landegg	Wp  H1	2501	3.d		Niederösterreich
 Pottenstein a.d.Triesting	Pt	1759	3.d		Niederösterreich
 Pottschach	Tn  H1	2233	3.d		Niederösterreich
 Pram-Haag	Pra	1745	3.d		Oberösterreich
+Preding-Wieselsdorf	Pwd	1789	3.c		Steiermark
 Pregarten	Pre	1749	3.c		Oberösterreich
+Premstätten-Tobelbad	Pms	1723	3.c		Steiermark
 Pressbaum	Pm  H1	1719	3.d		Niederösterreich
 Pressegger See	Ssv H2	724	3.d		Kärnten
 Prinzersdorf	Pd	1674	3.d		Niederösterreich
@@ -651,15 +673,15 @@ Purkersdorf Sanatorium	Hf  H4	808	3.c		Niederösterreich
 Purkersdorf Zentrum	Upz	2290	3.d		Niederösterreich
 Purkla	Gof H3	665	3.d		Steiermark
 Pusarnitz	Uz	2301	3.d		Kärnten
-Raaba	Mes H1	1391	3.d		Steiermark
+Raaba	Mra	1391	3.d		Steiermark
 Raasdorf	Raf	1811	3.c		Niederösterreich
 Rabensburg	Nh  H1	1544	3.d		Niederösterreich
-Radstadt	Rad	1809	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV bis voraussichtlich 12/2026 nicht möglich 	Salzburg
-Rainfeld-Klein Zell	Ror H1	854	3.d		Niederösterreich
+Radstadt	Rad	1809	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Salzburg
+Rainfeld-Kleinzell	Br  H1	854	3.d		Niederösterreich
 Ramingdorf-Haidershofen	Rh	1846	3.d		Niederösterreich
 Rankweil	Rk	1857	3.c		Vorarlberg
 Rattenberg-Kramsach	Rdf H1	2359	3.d		Tirol
-Redl-Zipf	Rz	1908	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Oberösterreich
+Redl-Zipf	Rz	1908	3.d		Oberösterreich
 Regelsbrunn	Reg	1832	3.d		Niederösterreich
 Reichraming	Rei	1834	3.d		Oberösterreich
 Reith	Re	1831	3.d		Tirol
@@ -673,7 +695,7 @@ Riedau	Ri	1851	3.d		Oberösterreich
 Riedenburg	Lat H1	1247	3.c		Vorarlberg
 Rietz	Ts  H1	2260	3.d		Tirol
 Rohr	Stu H1	2136	3.d		Steiermark
-Rohrbach a.d.Gölsen	Ror	853	3.d		Niederösterreich
+Rohrbach a.d.Gölsen	Hn  H1	853	3.d		Niederösterreich
 Rohrbach-Berg	Rob	1876	3.d		Oberösterreich
 Rohrbach-Vorau	Rv  H1	5865935	3.d		Steiermark
 Rohr-Bad Hall	Rr	1885	3.d		Oberösterreich
@@ -717,7 +739,6 @@ Schauersberg	Scb	1964	3.d		Oberösterreich
 Scheibbs	Sbs	1955	3.d		Niederösterreich
 Scheiblingkirchen-Warth	Sgk	2002	3.d		Niederösterreich
 Scheifling	Sf	1994	3.c		Steiermark
-Skiflugschanze Kulm	Ku  H1	1106	3.d	Halt in der Verkehrsstation wird nur im Rahmen von Großveranstaltungen angeboten	Steiermark
 Schladming	Sdg	1970	3.c		Steiermark
 Schlägl	Oep H1	1613	3.d		Oberösterreich
 Schleinbach	Snb	2040	3.d		Niederösterreich
@@ -756,22 +777,24 @@ Siemensstraße	F   H1	399	3.c		Wien
 Sierndorf	Si	2012	3.d		Niederösterreich
 Sierndorf a.d.March	Due H2	303	3.d		Niederösterreich
 Sigmundsherberg	Sh	2009	3.d		Niederösterreich
-Silberwald	Str H1	2126	3.d		Niederösterreich
+Silberwald	Str H1	2126	3.c		Niederösterreich
 Sillian	Sil	2015	3.d		Tirol
 Silz	Siz	2018	3.d		Tirol
 Sitzenberg-Reidling	Mos H2H	1450	3.d		Niederösterreich
+Skiflugschanze Kulm	Ku  H1	1106	3.d	Halt in der Verkehrsstation wird nur im Rahmen von Großveranstaltungen angeboten	Steiermark
 Söchau	Sou	2051	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Steiermark
+Söding-Mooskirchen	Smk	2032	3.d		Steiermark
 Sollenau	Lb  H1	1240760	3.d		Niederösterreich
 Sölling	Pus H1	1783	3.d		Niederösterreich
 Sonntagberg	Hk  H2	1888	3.d		Niederösterreich
-Spielberg	Kd  H1	1013	3.d	Halt in der Verkehrsstation wird nur im Rahmen von Großveranstaltungen angeboten	Steiermark
+Spielberg	Kd  H1	1013	3.d	Halt in der Verkehrsstation wird nur im Rahmen von Großveranstaltungen angeboten. Ab Netzfahrplanperiode 2027 wird die Station voraussichtlich nicht mehr angeboten.	Steiermark
 Spielfeld-Straß	Sd	1966	3.d		Steiermark
 Spillern	Ko  H2	1074	3.d		Niederösterreich
 Spital am Pyhrn	Spi	2066	3.d		Oberösterreich
 Spital am Semmering	Sps	2072	3.d		Steiermark
 Spittal-Millstättersee	Stt	2131	3.c		Kärnten
-St. Paul im Lavanttal	Lav	5705364	3.c		Kärnten
-St. Pölten Bildungscampus	Spr H3	5743597	3.d		Niederösterreich
+St.Paul im Lavanttal	Lav	5705364	3.c		Kärnten
+St.Pölten Bildungscampus	Spr H3	5743597	3.d		Niederösterreich
 St.Andrä im Lavanttal	An	64	3.d		Kärnten
 St.Andrä-Wördern	Aw	100	3.c		Niederösterreich
 St.Anton am Arlberg	Ao	71	3.c		Tirol
@@ -789,12 +812,14 @@ St.Johann in Tirol	Jti	978	3.c		Tirol
 St.Johann-Weistrach	Spw H1	2055	3.d		Niederösterreich
 St.Marein-St.Lorenzen	Mas	1342	3.d		Steiermark
 St.Martin bei Traun	Wd  H1	2399	3.d		Oberösterreich
+St.Martin i.S.-Bergla	Bgl	156	3.d		Steiermark
 St.Martin im Innkreis	Mn	1439	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Oberösterreich
 St.Martin-Sittich	Sms	2036	3.d		Kärnten
-St.Michael	M	1304	3.d		Steiermark
-St.Michael ob Bleiburg	Ble H1	175	3.d		Kärnten
+St.Michael	M	1304	3.c		Steiermark
+St.Michael ob Bleiburg/Smihel nad Pliberkom	Ble H1	175	3.d		Kärnten
 St.Nikola-Struden	Nk	1555	3.d		Oberösterreich
-St.Pantaleon	Mh  H1	1405	3.d		Oberösterreich
+St.Pantaleon Pyburg	Mh  H1	1405	3.d		Oberösterreich
+St.Peter im Sulmtal	Dlb H3	2176	3.d		Steiermark
 St.Peter-Seitenstetten	Sp	2054	3.c		Niederösterreich
 St.Pölten Hbf	Pb	1669	3.b		Niederösterreich
 St.Pölten Traisenpark	Vn  H1	1253979	3.d		Niederösterreich
@@ -806,15 +831,14 @@ St.Urban am Ossiachersee	Oi  H1	1619	3.d		Kärnten
 St.Valentin	Sv	2150	3.c		Niederösterreich
 St.Veit a.d.Glan	Vps	2345	3.c		Kärnten
 St.Veit a.d.Glan-West	Vs	2352	3.d		Kärnten
-St.Veit a.d.Gölsen	Ror H2	2317	3.d		Niederösterreich
+St.Veit a.d.Gölsen	Br  H2	2317	3.d		Niederösterreich
 St.Veit a.d.Triesting	Ez  H2	397	3.d		Niederösterreich
 Staatz	Enz K1	375	3.d		Niederösterreich
-Stadl-Paura	Stp	2123	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Oberösterreich
+Stadl-Paura	Stp	2123	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich. Die voraussichtliche Übernahme der Betriebsführung durch die Lokalbahn Lambach-Vorchdorf-Eggenberg ist ca. im ersten Halbjahr 2027 geplant.	Oberösterreich
 Stadt Haag	Spw H2	763	3.c		Niederösterreich
 Stadt Rottenmann	Rms	1864	3.d		Steiermark
 Stadt Waidhofen a.d.Ybbs	Wh  H1	2453	3.d		Niederösterreich
 Stainach-Irdning	Rg	1842	3.c		Steiermark
-Stallegg	Hna H2	1817	3.d	Ab Netzfahrplanperiode 2025 wird die Station nicht mehr angeboten.	Niederösterreich
 Stams	Sts	2129	3.d		Tirol
 Stans	Sns H1	962	3.d		Tirol
 Statzendorf	Stf	2102	3.d		Niederösterreich
@@ -831,7 +855,6 @@ Steinkogel	Law H2	1160	3.d		Oberösterreich
 Steyr	Stb	2099	3.c		Oberösterreich
 Steyr Münichholz	Sbw H1	1849	3.d		Oberösterreich
 Steyregg	Sy	2182	3.d		Oberösterreich
-Steyrling	Sng	2043	3.d	Ab Netzfahrplanperiode 2025 wird die Station nicht mehr angeboten.	Oberösterreich
 Stiefern	Plk H2	2121	3.d		Niederösterreich
 Stillfried	Ag  H1	16	3.d		Niederösterreich
 Stockerau	Su	2140	3.c		Niederösterreich
@@ -849,7 +872,7 @@ Tassenbach	Sil H2	2016	3.d		Tirol
 Tattendorf	Tat	2199	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Niederösterreich
 Tauchendorf-Haidensee	Lif H1	1222	3.d		Kärnten
 Tauchen-Schaueregg	Tau	2201	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Steiermark
-Taufkirchen a d Pram	Tp	2236	3.d		Oberösterreich
+Taufkirchen a.d. Pram	Tp	2236	3.d		Oberösterreich
 Tauplitz	Ku	1105	3.d		Steiermark
 Taxenbach-Rauris	Ta	2193	3.c		Salzburg
 Teesdorf	Tat H1	2208	3.d		Niederösterreich
@@ -864,8 +887,9 @@ Thalheim-Pöls	Tel	2211	3.d		Steiermark
 Theresienfeld	Fld H1	467	3.d		Niederösterreich
 Thörl-Maglern	Th	2216	3.d		Kärnten
 Tiffen	Fel H1	427	3.d		Kärnten
-Timelkam	Tm	2228	3.d	Inbetriebnahme in neuer Lage vorraussichtlich im Laufe des Jahres 2025 .Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Oberösterreich
-Tisis	To  H1	457	3.d		Vorarlberg
+Timelkam	Tm	2228	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Oberösterreich
+Tisis	To  H1	457	3.d	Ab Netzfahrplanperiode 2027 wird die Station voraussichtlich nicht mehr angeboten. (Ersatz wird die neue Station Tosters)	Vorarlberg
+Tosters	To	5309315	folgt	Ab voraussichtlich Netzfahrplanperiode 2027 wird die Station angeboten (Ersatz für Tisis)	Vorarlberg
 Töschling	Pow H1	1732	3.d		Kärnten
 Traisen	Trn	2254	3.d		Niederösterreich
 Traisen Markt	Lil H2	1227	3.d		Niederösterreich
@@ -893,7 +917,7 @@ Unter Höflein	Wil H1	2467	3.d		Niederösterreich
 Unter Purkersdorf	Up	2289	3.c		Niederösterreich
 Unter Radlberg	Hor	863	3.d		Niederösterreich
 Unter Tullnerbach	Up  H2	2291	3.d		Niederösterreich
-Unterberg-Stefansbrücke	I   H1	929	3.d	Ab Netzfahrplanperiode 2026 wird die Station voraussichtlich nicht mehr angeboten.	Tirol
+Unterberg-Stefansbrücke	I   H1	929	3.d	Ab Netzfahrplanperiode 2026 wird die Station nicht mehr angeboten.	Tirol
 Untereggendorf	Ef  H1	327	3.d		Niederösterreich
 Unterhart	Uh	2282	3.d		Oberösterreich
 Unterkritzendorf	Ken H2	1021	3.d		Niederösterreich
@@ -918,6 +942,7 @@ Vils Stadt	Vi  H1A	5231615	3.d		Tirol
 Vitis	Vit	2323	3.d		Niederösterreich
 Vöcklabruck	Vk	2326	3.c		Oberösterreich
 Vöcklamarkt	Vm	2333	3.d		Oberösterreich
+Voitsberg	Vob	2339	3.c		Steiermark
 Voitsdorf	Voi	2340	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Oberösterreich
 Volders-Baumkirchen	Fw  H1	518	3.d		Tirol
 Völs	Vl	2329	3.d		Tirol
@@ -928,9 +953,9 @@ Waldegg	Wag	2372	3.d		Niederösterreich
 Waldegg-Dürnbach	Wag H1	1252109	3.d		Niederösterreich
 Walding	Ott H1	1647	3.d		Oberösterreich
 Wallersee	Nst H2	1577	3.d		Salzburg
-Wampersdorf	Wp	2499	3.d		Niederösterreich
+Wampersdorf	Wp	2499	3.c		Niederösterreich
 Wankham	Ak  H1	37	3.d		Oberösterreich
-Wartberg a.d.Krems	Wak	2375	3.d		Oberösterreich
+Wartberg a.d.Krems	Wak	2375	3.c		Oberösterreich
 Wartberg im Mürztal	War	2385	3.c		Steiermark
 Weikendorf-Dörfles	Gae H1	549	3.d		Niederösterreich
 Weissenbach-Neuhaus	Web	2409	3.d		Niederösterreich
@@ -940,17 +965,17 @@ Weitersfeld a.d.Mur	Wem	2420	3.d		Steiermark
 Weitlanbrunn	Sc  H3	1963	3.d		Tirol
 Weizelsdorf	Wef	2412	3.d		Kärnten
 Wels Hbf	We	2401	3.b		Oberösterreich
-Wels Lokalbahn	Wl	2480	3.d	Bestellung als Bedarfshalt iSd. § 121 EisbBBV gem. EisbSV nicht möglich 	Oberösterreich
+Wels Lokalbahn	Wl	2480	3.d		Oberösterreich
 Wels Messe	Wl  H1	2482	3.d		Oberösterreich
 Wendling	Neu H1P	1530	3.d		Oberösterreich
 Werfen	Rf	1836	3.c		Salzburg
 Werndorf	Wr	2504	3.c		Steiermark
 Wernstein	Sch H1	2426	3.d		Oberösterreich
 Westendorf	Kit H1H	2431	3.d		Tirol
-Weststeiermark	Wst	5705361	folgt	Ab Netzfahrplanperiode 2026 wird die Station voraussichtlich angeboten.	Steiermark
+Weststeiermark	Wst	5705361	3.c		Steiermark
 Wettmannstätten	Wtt	1791	3.c		Steiermark
 Weyer	Wey	2441	3.d		Oberösterreich
-Wiederndorf-Aich	Wia	5012210	3.d		Kärnten
+Wiederndorf-Aich/Vidra vas-Dob	Wia	5012210	3.d		Kärnten
 Wien Aspern Nord	Sty	4773541	3.c		Wien
 Wien Atzgersdorf	Lga	115	3.c		Wien
 Wien Blumental	Id	934	3.d		Wien
@@ -962,16 +987,16 @@ Wien Franz-Josefs-Bf	Wf	2444	3.d		Wien
 Wien Grillgasse	Sg	1998	3.c		Wien
 Wien Hadersdorf	Hf  H2	805	3.c		Wien
 Wien Haidestraße	Wbf H2	2396	3.d		Wien
-Wien Hauptbahnhof	Wbf	2393; 4773103	3.a		Wien
-Wien Hauptbahnhof Südtiroler Platz	Wsp	2393; 4773103	3.a		Wien
+Wien Hauptbahnhof	Wbf	2393	3.a		Wien
+Wien Hauptbahnhof Südtiroler Platz	Wsp	4773103	3.a		Wien
 Wien Heiligenstadt	Ht	901	3.c		Wien
 Wien Hetzendorf	Het	1348	3.c		Wien
 Wien Hirschstetten	Stc	2096	3.c		Wien
 Wien Hütteldorf	Hf	804	3.c		Wien
 Wien Matzleinsdorfer Platz	Wbf H1S	1349	3.c		Wien
 Wien Meidling	Mi	1410	3.a		Wien
-Wien Mitte	Hz	926; 4747985	3.c		Wien
-Wien Mitte - CAT	Cat	926; 4747985	3.c		Wien
+Wien Mitte	Hz	926	3.c		Wien
+Wien Mitte - CAT	Cat	4747985	3.c		Wien
 Wien Oberdöbling	Ht  H1	902	3.c		Wien
 Wien Penzing	Pz	1797	3.c		Wien
 Wien Praterkai	El  H1	353	3.d		Wien
@@ -991,8 +1016,10 @@ Wiener Neustadt Anemonensee	Nb  H1A	1501	3.d		Niederösterreich
 Wiener Neustadt Civitas Nova	Ed  H1	315	3.d		Niederösterreich
 Wiener Neustadt Hbf	Nb	1499	3.b		Niederösterreich
 Wiener Neustadt Nord	Fld H2	468	3.d		Niederösterreich
+Wies Markt	Bgl H2	1696	3.d		Steiermark
+Wies-Eibiswald	Wew	2440	3.d		Steiermark
 Wieselburg a.d.Erlauf	Wie	2459	3.d		Niederösterreich
-Wiesenfeld-Schwarzenbach	Ror H3	2318	3.d		Niederösterreich
+Wiesenfeld-Schwarzenbach	Br  H3	2318	3.d		Niederösterreich
 Wiesen-Sigleß	Sau H1	1941	3.d		Burgenland
 Wiesmühle	Gdf H1	564	3.d		Oberösterreich
 Wildon	Wi	2456	3.d		Steiermark
@@ -1020,7 +1047,7 @@ Wörgl Hbf	W	2358	3.b		Tirol
 Wörgl Kundl	Kn	1065	3.d		Tirol
 Wörgl Süd - Bruckhäusl	Hp  H1	216	3.d		Tirol
 Wörschach Schwefelbad	Ln  H1	2397	3.d		Steiermark
-Wulkaprodersdorf Rathausgasse	Wul H1H	306	3.d		Burgenland
+Wulkaprodersdorf Rathausgasse/Vulkaprodrstof Rathausgasse	Wul H1H	306	3.d		Burgenland
 Ybbs a.d.Donau	Y	2529	3.c		Niederösterreich
 Zeiselmauer-Königstetten	Aw  H1	109	3.d		Niederösterreich
 Zell a.d.Pram	Ri  H1	1852	3.d		Oberösterreich
@@ -1032,34 +1059,3 @@ Ziersdorf	Zf	2554	3.d		Niederösterreich
 Zirl	Zl	2567	3.d		Tirol
 Zöbing	Sbk H1	1949	3.d		Niederösterreich
 Zurndorf	Zu	2580	3.d		Burgenland
-Alling-Tobisegg	Lnn H2	1253	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen. Bedarfshalt voraussichtlich ab Netzfahrplanperiode 2026	Steiermark
-Bad Schwanberg	Dlb H2	2175	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Bärnbach	Vob K3	131	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Deutschlandsberg Stadt	Dlb	281	3.c	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Dietmannsdorf	Bgl H1	158	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Frauental-Bad Gams	Frt	505	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Gaisfeld	Kro H1	1088	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen. Ab Netzfahrplanperiode 2026 wird die Station voraussichtlich nicht mehr angeboten.	Steiermark
-Graz Köflacherbf	Gkf	608	3.c	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Graz Straßgang	Sgg	2001	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Graz Webling	Gkf H2	611	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Graz Wetzelsdorf	Gkf H1	610	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Groß St.Florian	Gfl	584	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Gussendorf	Wtt H1	1790	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Hollenegg	Dlb H1	282	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Köflach	Kfl	1029	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Köppling	Smk H1	2033	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Krems in Steiermark	Kro K1	1089	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Krottendorf-Ligist	Kro	1087	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Lannach	Lnn	1252	3.c	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Lieboch	Lbo	1166	3.c	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Lieboch Schadendorf	Lbo H1	1169	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Oisnitz-St.Josef	Lnn H1	1254	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Pölfing-Brunn	Bgl H1A	1695	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Preding-Wieselsdorf	Pwd	1789	3.c	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Premstätten-Tobelbad	Pms	1723	3.c	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Söding-Mooskirchen	Smk	2032	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-St.Martin i.S.-Bergla	Bgl	156	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-St.Peter im Sulmtal	Dlb H3	2176	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Voitsberg	Vob	2339	3.c	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Wies Markt	Bgl H2	1696	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
-Wies-Eibiswald	Wew	2440	3.d	Gemäß Bundesgesetz über die Übertragung des Teilbetriebes Infrastruktur der Graz-Köflacher Bahn und Busbetrieb GmbH an die ÖBB-Infrastruktur AG wurde diese Verkehrsstation an die ÖBB-Infrastruktur AG übertragen.	Steiermark
