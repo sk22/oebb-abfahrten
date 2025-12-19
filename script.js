@@ -1,7 +1,6 @@
 const table = document.getElementById("bahnhoefe");
 const operatorsDiv = document.getElementById("operators");
 const search = document.getElementById("search");
-const rows = [];
 
 // from https://meine.oebb.at/webdisplay/templates/config.json
 const operators = [
@@ -34,19 +33,19 @@ for (const op of operators) {
 }
 
 fetch("./oebb-db640-codes.tsv").then(async (res) => {
-	const csv = await res.text();
-	const bhfs = csv
+	const rows = (await res.text())
 		.split("\n")
 		.slice(1)
 		.filter((l) => l.length)
-		.map((l) => [l, l.split("	")]);
-	bhfs.forEach(([line, [name, code]]) => {
-		rows.push([code, name, line]);
-	});
-	renderRows();
+		.map((l) => {
+			const [name, code] = l.split("	");
+			return [code, name, l];
+		});
+	window.rows = rows;
+	render(rows);
 });
 
-const renderRows = () => {
+function render(rows) {
 	table.innerHTML = "";
 	const filter = search.value.toLowerCase();
 	rows.forEach(([code, name, line]) => {
@@ -84,6 +83,6 @@ const renderRows = () => {
 
 		table.appendChild(tr);
 	});
-};
+}
 
-search.addEventListener("input", renderRows);
+search.addEventListener("input", render);
