@@ -1,6 +1,9 @@
 const table = document.getElementById("bahnhoefe");
 const operatorsDiv = document.getElementById("operators");
 const search = document.getElementById("search");
+const trs = new Set();
+let rows = null;
+let filter = null;
 
 // from https://meine.oebb.at/webdisplay/templates/config.json
 const operators = [
@@ -33,7 +36,7 @@ for (const op of operators) {
 }
 
 fetch("./oebb-db640-codes.tsv").then(async (res) => {
-	const rows = (await res.text())
+	rows = (await res.text())
 		.split("\n")
 		.slice(1)
 		.filter((l) => l.length)
@@ -41,12 +44,12 @@ fetch("./oebb-db640-codes.tsv").then(async (res) => {
 			const [name, code] = l.split("	");
 			return [code, name, l];
 		});
-	window.rows = rows;
-	render(rows);
+	render();
 });
 
-function render(rows) {
+function render() {
 	table.innerHTML = "";
+	trs.clear();
 	const filter = search.value.toLowerCase();
 	rows.forEach(([code, name, line]) => {
 		if (!line.toLowerCase().includes(filter)) return;
@@ -55,6 +58,9 @@ function render(rows) {
 		const stationId = code.replace(" ", "");
 
 		const tr = document.createElement("tr");
+		tr.style.viewTransitionName = code.replace(/\s+/g, "_");
+		trs.add(tr);
+
 		const bhfTd = document.createElement("td");
 		bhfTd.innerHTML = `<strong>${name}</strong> <small>${code}</small>`;
 		bhfTd.className = "station-name";
@@ -85,4 +91,6 @@ function render(rows) {
 	});
 }
 
-search.addEventListener("input", render);
+search.addEventListener("input", () => {
+	document.startViewTransition(() => render());
+});
