@@ -21,9 +21,11 @@ const tableHtml = oebbStations
 		([plc, name]) =>
 			`<tr class="station" data-plc="${plc}" data-name="${name}" style="view-transition-name: plc-${plc};">
 				<td class="station-name"><strong>${name}</strong> <small>${plc}</small></td>
-				<td><a href="https://meine.oebb.at/webdisplay/?stationId=${plc}&contentType=departure&staticLayout=true&page=1&offset=0&ignoreIncident=true">Abfahrten</a></td>
-				<td><a href="https://meine.oebb.at/webdisplay/?stationId=${plc}&contentType=arrival&staticLayout=true&page=1&offset=0&ignoreIncident=true">Ankünfte</a></td>
-				<td><a href="https://meine.oebb.at/webdisplay/?stationId=${plc}&contentType=departure&staticLayout=false&page=1&offset=0&ignoreIncident=true">Mobile</a></td>
+				<td class="station-links">
+					<a href="https://meine.oebb.at/webdisplay/?stationId=${plc}&contentType=departure&staticLayout=true&page=1&offset=0&ignoreIncident=true">Abfahrten</a>
+					<a href="https://meine.oebb.at/webdisplay/?stationId=${plc}&contentType=arrival&staticLayout=true&page=1&offset=0&ignoreIncident=true">Ankünfte</a>
+					<a href="https://meine.oebb.at/webdisplay/?stationId=${plc}&contentType=departure&staticLayout=false&page=1&offset=0&ignoreIncident=true">Mobile</a>
+				</td>
 			</tr>`,
 	)
 	.join("\n");
