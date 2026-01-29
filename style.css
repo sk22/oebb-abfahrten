@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    overflow-y: scroll;
+    color-scheme: dark;
+}
+
 body {
     font-family: sans-serif;
     background-color: #1e007d;
@@ -9,57 +14,71 @@ body {
     margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    @view-transition {
-        navigation: auto;
-    }
+.list {
+    view-transition-name: bahnhoefe;
+    background: linear-gradient(#2938b9 50%, transparent 50%);
+    background-size: 100% 6rem;
+    background-repeat: repeat-y;
 }
 
 .operator {
-    height: 32px;
+    height: 2rem;
 }
 
 .operator + .operator {
-    margin-left: 4px;
+    margin-left: 0.25rem;
 }
 
 #operators {
     width: 100%;
     background: white;
     margin-bottom: 16px;
-    padding-top: 4px;
+    padding-top: 0.25rem;
     text-align: center;
 }
 
 #search {
     margin-bottom: 1rem;
     width: 100%;
+    color: white;
+
+    &::placeholder {
+        color: darkgray;
+    }
 }
 
-table {
+#bahnhoefe {
     border: none;
     width: 100%;
     border-collapse: collapse;
 }
 
-table tr {
+#bahnhoefe tr {
     content-visibility: auto;
+    height: 3rem;
 }
 
-table tr:nth-child(odd) {
-    background: #2938b9;
+#bahnhoefe tr[data-hidden=true] {
+    display: none;
 }
 
-table td,
-table th {
-    padding: 0.5rem;
+#bahnhoefe tr:nth-child(n + 50 of :not([data-hidden=true])) {
+    view-transition-name: none !important;
+}
+
+#bahnhoefe td {
+    padding-inline: 0.5rem;
+}
+
+.station-name {
+    width: 100%;
 }
 
 a {
     color: white;
 }
 
-.wrapper {
+.centered {
     margin: 0 auto;
     max-width: 40rem;
 }
@@ -77,14 +96,11 @@ input {
     transition: 500ms;
 }
 
-.search:has(#search:not(:placeholder-shown)) + .info {
-    display: none;
-}
-
 .info {
+    view-transition-name: info-banner;
     background: white;
     color: black;
-    padding: 0.5rem;
+    padding: 0.75rem 0.5rem;
     margin-block-end: 1rem;
 
     a {
@@ -110,5 +126,11 @@ h2 {
     .footer,
     .search {
         padding-inline: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    @view-transition {
+        navigation: auto;
     }
 }

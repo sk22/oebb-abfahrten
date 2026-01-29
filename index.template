@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>ÖBB Abfahrten/Ankünfte</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<div id="operators"></div>
+		<div class="centered search">
+			<input type="search" id="search" placeholder="Search…" />
+		</div>
+
+		<div class="centered info" id="info">
+			<h3><a href="https://infotogo.oebb.at">ÖBB Info-To-Go</a></h3>
+			<p>
+				Note that ÖBB has started to provide a similar offering with
+				Info-To-Go, complete with further information about the
+				stations.
+			</p>
+		</div>
+
+		<div class="list">
+			<table class="centered" id="bahnhoefe">{{contents}}</table>
+		</div>
+	</body>
+</html>
