@@ -23,7 +23,7 @@
 		</div>
 
 		<div class="list">
-			<table class="centered" id="bahnhoefe">{{contents}}</table>
+			<div class="centered" id="bahnhoefe">{{contents}}</div>
 		</div>
 	</body>
 </html>

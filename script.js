@@ -38,9 +38,7 @@ const trs = document.getElementsByClassName("station");
 
 let timeout = null;
 
-search.addEventListener("input", () => {
-  if (timeout) clearTimeout(timeout);
-  timeout = setTimeout(() => {
+function performFilter() {
     const searchTerm = search.value.toLowerCase();
     timeout = null;
     document.startViewTransition(() => {
@@ -54,5 +52,11 @@ search.addEventListener("input", () => {
         tr.dataset.hidden = !found;
       }
     });
-  }, 200);
+  }
+
+search.addEventListener("input", () => {
+  if (timeout) clearTimeout(timeout);
+  timeout = setTimeout(performFilter, 200);
 });
+
+performFilter();

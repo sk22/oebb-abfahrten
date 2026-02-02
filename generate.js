@@ -19,14 +19,14 @@ fs.writeFile("stations.tsv", oebbStations.map((s) => s.join("\t")).join("\n"));
 const tableHtml = oebbStations
 	.map(
 		([plc, name]) =>
-			`<tr class="station" data-plc="${plc}" data-name="${name}" style="view-transition-name: plc-${plc};">
-				<td class="station-name"><strong>${name}</strong> <small>${plc}</small></td>
-				<td class="station-links">
-					<a href="https://meine.oebb.at/webdisplay/?stationId=${plc}&contentType=departure&staticLayout=true&page=1&offset=0&ignoreIncident=true">Abfahrten</a>
-					<a href="https://meine.oebb.at/webdisplay/?stationId=${plc}&contentType=arrival&staticLayout=true&page=1&offset=0&ignoreIncident=true">Ankünfte</a>
-					<a href="https://meine.oebb.at/webdisplay/?stationId=${plc}&contentType=departure&staticLayout=false&page=1&offset=0&ignoreIncident=true">Mobile</a>
-				</td>
-			</tr>`,
+			`<div class="station" data-plc="${plc}" data-name="${name}" style="view-transition-name: plc-${plc};">
+				<div class="station-info"><a class="station-name" href="https://infotogo.oebb.at/~${plc}~">${name}</a> <small>${plc}</small></div>
+				<div class="station-links">
+					<a class="station-links__mob" href="https://meine.oebb.at/abfahrtankunft/departure/?plc=${plc}&static=false">Mobil</a>
+					<a class="station-links__dep" href="https://meine.oebb.at/webdisplay/?stationId=${plc}&contentType=departure&staticLayout=true&page=1&offset=0&ignoreIncident=true">Abfahrten</a>
+					<a class="station-links__arr" href="https://meine.oebb.at/webdisplay/?stationId=${plc}&contentType=arrival&staticLayout=true&page=1&offset=0&ignoreIncident=true">Ankünfte</a>
+				</div>
+			</div>`,
 	)
 	.join("\n");
 

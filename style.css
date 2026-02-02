@@ -3,7 +3,7 @@
 }
 
 :root {
-	--row-height: 3rem;
+	--row-height: 36px;
 	overflow-y: scroll;
 	color-scheme: dark;
 }
@@ -20,6 +20,7 @@ body {
 	background: linear-gradient(#2938b9 50%, transparent 50%);
 	background-size: 100% calc(2 * var(--row-height));
 	background-repeat: repeat-y;
+	margin-block-end: 36px;
 }
 
 .operator {
@@ -27,13 +28,13 @@ body {
 }
 
 .operator + .operator {
-	margin-left: 0.25rem;
+	margin-inline-start: 0.25rem;
 }
 
 #operators {
 	width: 100%;
 	background: white;
-	margin-bottom: 16px;
+	margin-bottom: 1rem;
 	padding-top: 0.25rem;
 	text-align: center;
 }
@@ -57,6 +58,9 @@ body {
 .station {
 	content-visibility: auto;
 	height: var(--row-height);
+	position: relative;
+	display: flex;
+	align-items: stretch;
 }
 
 .station[data-hidden="true"] {
@@ -67,16 +71,39 @@ body {
 	view-transition-name: none !important;
 }
 
-.station td {
-	padding-inline: 0.5rem;
+.station-info {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	row-gap: 4px;
+	column-gap: 8px;
+	justify-content: space-between;
+	padding-inline: 8px;
+	flex: 1;
+}
+
+.station-name {
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .station-links {
-	text-align: end;
+	display: flex;
 }
 
-.station-links a + a {
-	padding-inline-start: 0.25rem;
+.station-links a {
+	display: inline-block;
+	z-index: 1;
+	background-color: rgb(255 255 255 / 0.1);
+	border: 1px solid rgb(255 255 255 / 0.5);
+	margin-inline-start: -1px;
+	padding-inline: 4px;
+	line-height: calc(var(--row-height));
+}
+
+.station:not(:nth-last-child(1 of :not([data-hidden="true"]))) a {
+	border-block-end: none;
 }
 
 a {
@@ -129,23 +156,41 @@ h2 {
 
 @media (width <= 40rem) {
 	:root {
-		--row-height: 4rem;
+		--row-height: 56px;
 	}
 
-	.station-name > strong {
-		display: block;
+	.station-info {
+		flex-direction: column;
+		align-items: start;
+		justify-content: center;
+	}
+	
+	.station-links > a {
+		min-width: 48px;
+		text-align: center;
+		font-size: 0;
+
+		&::after {
+			font-size: 1rem;
+		}
+	}
+
+	.station-links__mob::after {
+		content: 'Mob.';
+	}
+		
+	.station-links__dep::after {
+		content: 'Abf.'
+	}
+
+	.station-links__arr::after {
+		content: 'Ank.'
 	}
 
 	.footer,
 	.search {
-		padding-inline: 1rem;
+		padding-inline: 8px;
 	}
-}
-
-@media (width > 40rem) {
-    .station-links {
-        width: 50%;
-    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
