@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webdisplay scroller</title>
+    <style>
+        :root {
+            --headline-height-vh: 9.3vw; /* vh height of .headline */
+            --header-first-language-height-vh: 4.4vw; /* vh height of .header-first-language */
+            --header-second-language-height-vh: 4.4vw; /* vh height of .header-second-language */
+            --top-vh: calc(var(--headline-height-vh) + var(--header-first-language-height-vh) + var(--header-second-language-height-vh));
+            --top: calc(var(--top-vh) / 16 * 9);
+        }
+
+        body {
+            margin: 0;
+            background-color: #000094;
+            line-height: 0;
+            transform-origin: top;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            pointer-events: none;
+        }
+        a {
+            display: block;
+        }
+        a:not(:first-child) {
+            position: relative;
+            margin-top: calc(-1 * var(--top));
+            margin-bottom: calc(-1 * var(--bottom));
+        }
+    </style>
+</head>
+<body>
+    <a><iframe></iframe></a>
+    <a><iframe></iframe></a>
+    <a><iframe></iframe></a>
+    <a><iframe></iframe></a>
+    <a><iframe></iframe></a>
+    <a><iframe></iframe></a>
+    <a><iframe></iframe></a>
+
+    <script>
+        const overscan = window.innerHeight / 3
+        const iframes = Array.from(document.querySelectorAll('iframe'))
+        const params = new URLSearchParams('?stationId=8101003&contentType=departure&staticLayout=true&ignoreIncident=true')
+        const newParams = new URLSearchParams(location.search)
+        newParams.forEach((value, key) => params.set(key, value))
+        
+        iframes.forEach((iframe, i) => {
+            params.set('page', i + 1)
+            params.set('offset', i * 12)
+            const src = `https://meine.oebb.at/webdisplay/?${params.toString()}`
+            iframe.parentElement.href = src
+            iframe.dataset.src = src
+            iframe.parentElement.style.zIndex = -i
+        })
+
+        function handleScroll() {
+            iframes.forEach(iframe => {
+                const { y, height } = iframe.getBoundingClientRect()
+                const isVisible = (y + height + overscan) >= 0 && (y - overscan) <= window.innerHeight
+                const currentSrc = iframe.getAttribute('src')
+                if (isVisible && !currentSrc) iframe.setAttribute('src', iframe.dataset.src)
+                else if (!isVisible && currentSrc) iframe.setAttribute('src', '')
+            })
+        }
+        function handleResize() {
+            document.body.style.scale = Math.min(1, (window.innerHeight / window.innerWidth) * (16 / 9))
+        }
+        handleScroll()
+        handleResize()
+        document.addEventListener('scroll', handleScroll)
+        window.addEventListener('resize', handleResize)
+    </script>
+</body>
+</html>
