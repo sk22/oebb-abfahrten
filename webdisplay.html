@@ -21,9 +21,8 @@
 				flex: 1;
 				container-type: inline-size;
 				overflow: auto;
-				max-height: 100vh;
 				scrollbar-width: none;
-				min-height: calc(100vh * pow(var(--scale), -1));
+				height: calc(100svh * pow(var(--scale), -1));
 			}
 
 			iframe {
@@ -52,10 +51,10 @@
 				margin-bottom: calc(-1 * var(--bottom));
 			}
 
-			#fullscreen {
+			.fullscreen {
 				border: none;
-				font-size: 2rem;
-				height: 4rem;
+				font-size: 3cqw;
+				padding: 2cqw;
 				width: 100%;
 				background-color: #0000ce;
 				color: white;
@@ -71,9 +70,11 @@
 			<a><iframe></iframe></a>
 			<a><iframe></iframe></a>
 			<a><iframe></iframe></a>
+			<button class="fullscreen">full screen</button>
 		</section>
 
 		<script>
+			const fullscreenButtons = document.querySelectorAll(".fullscreen");
 			const overscan = window.innerHeight / 3;
 			const params = new URLSearchParams(
 				"contentType=departure&staticLayout=true&ignoreIncident=true",
@@ -88,8 +89,8 @@
 				: ["departure"];
 
 			const firstSection = document.querySelector("section");
-			const prependFormations = params.has('formations')
-			params.delete('formations')
+			const prependFormations = params.has("formations");
+			params.delete("formations");
 
 			const sections = Array(Math.max(stationIds.length, contentTypes.length))
 				.fill(firstSection)
@@ -100,6 +101,12 @@
 					return newSection;
 				});
 
+			function reloadIframe(...iframes) {
+				iframes.forEach((iframe) =>
+					iframe.setAttribute("src", iframe.getAttribute("src")),
+				);
+			}
+
 			function prepareIframe(iframe) {
 				iframe.allowFullscreen = true;
 				const src = `https://meine.oebb.at/webdisplay/?${params.toString()}`;
@@ -109,7 +116,7 @@
 				link.addEventListener("click", (ev) => {
 					ev.preventDefault();
 					iframe.requestFullscreen();
-					iframe.setAttribute("src", iframe.getAttribute("src"));
+					reloadIframe(iframe);
 				});
 			}
 
@@ -117,11 +124,10 @@
 				const contentType = contentTypes[boardIndex] || contentTypes[0];
 				params.set("stationId", stationIds[boardIndex] || stationIds[0]);
 				params.set("contentType", contentType);
-				const iframes = section.querySelectorAll("iframe")
+				const iframes = section.querySelectorAll("iframe");
 
 				iframes.forEach((iframe, i) => {
 					if (contentType === "formation" && i !== 0) {
-						
 						iframe.parentElement.style.display = "none";
 						return;
 					}
@@ -135,8 +141,8 @@
 					const link = document.createElement("a");
 					const iframe = document.createElement("iframe");
 					link.append(iframe);
-					params.delete('page')
-					params.delete('offset')
+					params.delete("page");
+					params.delete("offset");
 					params.set("contentType", "formation");
 					prepareIframe(iframe);
 					link.style.zIndex = iframes.length + 1;
@@ -145,6 +151,17 @@
 			});
 
 			const allIframes = Array.from(document.querySelectorAll("iframe"));
+
+			fullscreenButtons.forEach((btn) =>
+				btn.addEventListener("click", () => {
+					if (!document.fullscreenElement) {
+						document.documentElement.requestFullscreen();
+					} else {
+						document.exitFullscreen();
+					}
+					reloadIframe(...allIframes);
+				}),
+			);
 
 			function handleScroll() {
 				allIframes.forEach((iframe) => {
@@ -160,7 +177,11 @@
 			function handleResize() {
 				document.body.style.setProperty(
 					"--scale",
-					Math.min(1, (window.innerHeight / window.innerWidth) * (16 * sections.length / 9)),
+					Math.min(
+						1,
+						(window.innerHeight / window.innerWidth) *
+							((16 * sections.length) / 9),
+					),
 				);
 			}
 			handleResize();
