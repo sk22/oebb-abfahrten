@@ -5,9 +5,9 @@
 		<title>Webdisplay scroller</title>
 		<style>
 			:root {
-				--headline-height-vh: 9.3vw; /* vh height of .headline */
-				--header-first-language-height-vh: 4.4vw; /* vh height of .header-first-language */
-				--header-second-language-height-vh: 4.4vw; /* vh height of .header-second-language */
+				--headline-height-vh: 9.3%; /* vh height of .headline */
+				--header-first-language-height-vh: 4.4%; /* vh height of .header-first-language */
+				--header-second-language-height-vh: 4.4%; /* vh height of .header-second-language */
 				--top-vh: calc(
 					var(--headline-height-vh) + var(--header-first-language-height-vh) +
 						var(--header-second-language-height-vh)
@@ -20,66 +20,120 @@
 				background-color: #000094;
 				line-height: 0;
 				transform-origin: top;
+				display: flex;
 			}
+
+			section {
+				flex: 1;
+			}
+
 			iframe {
 				border: none;
 				width: 100%;
 				aspect-ratio: 16 / 9;
 				pointer-events: none;
 			}
+
 			a {
 				display: block;
-			}
-			a:not(:first-child) {
 				position: relative;
+			}
+
+			a:not(:first-child) {
 				margin-top: calc(-1 * var(--top));
 				margin-bottom: calc(-1 * var(--bottom));
 			}
-            #fullscreen {
-                border: none;
-                font-size: 2rem;
-                height: 4rem;
-                width: 100%;
-                background-color: #0000ce;
-                color: white;
-            }
+
+			#fullscreen {
+				border: none;
+				font-size: 2rem;
+				height: 4rem;
+				width: 100%;
+				background-color: #0000ce;
+				color: white;
+			}
 		</style>
 	</head>
 	<body>
-		<a><iframe allowfullscreen></iframe></a>
-		<a><iframe allowfullscreen></iframe></a>
-		<a><iframe allowfullscreen></iframe></a>
-		<a><iframe allowfullscreen></iframe></a>
-		<a><iframe allowfullscreen></iframe></a>
-		<a><iframe allowfullscreen></iframe></a>
-		<a><iframe allowfullscreen></iframe></a>
+		<section>
+			<a><iframe></iframe></a>
+			<a><iframe></iframe></a>
+			<a><iframe></iframe></a>
+			<a><iframe></iframe></a>
+			<a><iframe></iframe></a>
+			<a><iframe></iframe></a>
+			<a><iframe></iframe></a>
+		</section>
 
 		<script>
 			const overscan = window.innerHeight / 3;
-			const iframes = Array.from(document.querySelectorAll("iframe"));
 			const params = new URLSearchParams(
-				"?stationId=8101003&contentType=departure&staticLayout=true&ignoreIncident=true",
+				"contentType=departure&staticLayout=true&ignoreIncident=true",
 			);
-			const newParams = new URLSearchParams(location.search);
-			newParams.forEach((value, key) => params.set(key, value));
+			const urlParams = new URLSearchParams(location.search);
+			urlParams.forEach((value, key) => params.set(key, value));
+			const stationIds = urlParams.has("stationId")
+				? urlParams.getAll("stationId").flatMap((value) => value.split(","))
+				: ["8101003"];
+			const contentTypes = urlParams.has("contentType")
+				? urlParams.getAll("contentType").flatMap((value) => value.split(","))
+				: ["departure"];
 
-			iframes.forEach((iframe, i) => {
-				params.set("page", i + 1);
-				params.set("offset", i * 12);
+			const firstSection = document.querySelector("section");
+
+			const sections = Array(Math.max(stationIds.length, contentTypes.length))
+				.fill(firstSection)
+				.map((s, i) => {
+					if (i === 0) return s;
+					const newSection = s.cloneNode(true);
+					document.body.append(newSection);
+					return newSection;
+				});
+
+			function prepareIframe(iframe) {
+				iframe.allowFullscreen = true;
 				const src = `https://meine.oebb.at/webdisplay/?${params.toString()}`;
 				iframe.dataset.src = src;
 				const link = iframe.parentElement;
 				link.href = src;
-				link.style.zIndex = -i;
-				link.addEventListener('click', (ev) => {
-				    ev.preventDefault()
-				    iframe.requestFullscreen()
-                    iframe.setAttribute('src', iframe.getAttribute('src'))
-				})
+				link.addEventListener("click", (ev) => {
+					ev.preventDefault();
+					iframe.requestFullscreen();
+					iframe.setAttribute("src", iframe.getAttribute("src"));
+				});
+			}
+
+			sections.forEach((section, boardIndex) => {
+				const contentType = contentTypes[boardIndex] || contentTypes[0];
+				params.set("stationId", stationIds[boardIndex] || stationIds[0]);
+				params.set("contentType", contentType);
+
+				section.querySelectorAll("iframe").forEach((iframe, i) => {
+					if (contentType === "formation" && i !== 0) {
+						iframe.parentElement.style.display = "none";
+						return;
+					}
+					params.set("page", i + 1);
+					params.set("offset", i * 12);
+					prepareIframe(iframe);
+					iframe.parentElement.style.zIndex = -i;
+				});
+
+				if (params.has("formations")) {
+					const link = document.createElement("a");
+					const iframe = document.createElement("iframe");
+					link.append(iframe);
+					params.set("contentType", "formation");
+					prepareIframe(iframe);
+					link.style.zIndex = 1;
+					section.prepend(link);
+				}
 			});
 
+			const allIframes = Array.from(document.querySelectorAll("iframe"));
+
 			function handleScroll() {
-				iframes.forEach((iframe) => {
+				allIframes.forEach((iframe) => {
 					const { y, height } = iframe.getBoundingClientRect();
 					const isVisible =
 						y + height + overscan >= 0 && y - overscan <= window.innerHeight;
@@ -90,10 +144,10 @@
 				});
 			}
 			function handleResize() {
-				document.body.style.scale = Math.min(
-					1,
-					(window.innerHeight / window.innerWidth) * (16 / 9),
-				);
+				// document.body.style.scale = Math.min(
+				// 	1,
+				// 	(window.innerHeight / window.innerWidth) * (16 / 9),
+				// );
 			}
 			handleScroll();
 			handleResize();
