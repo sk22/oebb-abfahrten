@@ -6,6 +6,7 @@
 		<style>
 			html {
 				color-scheme: dark;
+				overflow: hidden;
 			}
 
 			body {
@@ -13,11 +14,16 @@
 				line-height: 0;
 				transform-origin: top;
 				display: flex;
+				scale: var(--scale);
 			}
 
 			section {
 				flex: 1;
 				container-type: inline-size;
+				overflow: auto;
+				max-height: 100vh;
+				scrollbar-width: none;
+				min-height: calc(100vh * pow(var(--scale), -1));
 			}
 
 			iframe {
@@ -146,14 +152,14 @@
 				});
 			}
 			function handleResize() {
-				// document.body.style.scale = Math.min(
-				// 	1,
-				// 	(window.innerHeight / window.innerWidth) * (16 / 9),
-				// );
+				document.body.style.setProperty(
+					"--scale",
+					Math.min(1, (window.innerHeight / window.innerWidth) * (16 / 9)),
+				);
 			}
 			handleScroll();
 			handleResize();
-			document.addEventListener("scroll", handleScroll);
+			sections.forEach((s) => s.addEventListener("scroll", handleScroll));
 			window.addEventListener("resize", handleResize);
 		</script>
 	</body>
