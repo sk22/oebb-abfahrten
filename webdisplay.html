@@ -4,20 +4,12 @@
 		<meta charset="UTF-8" />
 		<title>Webdisplay scroller</title>
 		<style>
-			:root {
-				--headline-height-vh: 9.3%; /* vh height of .headline */
-				--header-first-language-height-vh: 4.4%; /* vh height of .header-first-language */
-				--header-second-language-height-vh: 4.4%; /* vh height of .header-second-language */
-				--top-vh: calc(
-					var(--headline-height-vh) + var(--header-first-language-height-vh) +
-						var(--header-second-language-height-vh)
-				);
-				--top: calc(var(--top-vh) / 16 * 9);
+			html {
+				color-scheme: dark;
 			}
 
 			body {
 				margin: 0;
-				background-color: #000094;
 				line-height: 0;
 				transform-origin: top;
 				display: flex;
@@ -25,6 +17,7 @@
 
 			section {
 				flex: 1;
+				container-type: inline-size;
 			}
 
 			iframe {
@@ -37,6 +30,15 @@
 			a {
 				display: block;
 				position: relative;
+
+				--headline-height-vh: 9.3cqw; /* vh height of .headline */
+				--header-first-language-height-vh: 4.4cqw; /* vh height of .header-first-language */
+				--header-second-language-height-vh: 4.4cqw; /* vh height of .header-second-language */
+				--top-vh: calc(
+					var(--headline-height-vh) + var(--header-first-language-height-vh) +
+						var(--header-second-language-height-vh)
+				);
+				--top: calc(var(--top-vh) / 16 * 9);
 			}
 
 			a:not(:first-child) {
