@@ -88,6 +88,8 @@
 				: ["departure"];
 
 			const firstSection = document.querySelector("section");
+			const prependFormations = params.has('formations')
+			params.delete('formations')
 
 			const sections = Array(Math.max(stationIds.length, contentTypes.length))
 				.fill(firstSection)
@@ -115,25 +117,29 @@
 				const contentType = contentTypes[boardIndex] || contentTypes[0];
 				params.set("stationId", stationIds[boardIndex] || stationIds[0]);
 				params.set("contentType", contentType);
+				const iframes = section.querySelectorAll("iframe")
 
-				section.querySelectorAll("iframe").forEach((iframe, i) => {
+				iframes.forEach((iframe, i) => {
 					if (contentType === "formation" && i !== 0) {
+						
 						iframe.parentElement.style.display = "none";
 						return;
 					}
 					params.set("page", i + 1);
 					params.set("offset", i * 12);
 					prepareIframe(iframe);
-					iframe.parentElement.style.zIndex = -i;
+					iframe.parentElement.style.zIndex = iframes.length - i;
 				});
 
-				if (params.has("formations")) {
+				if (prependFormations) {
 					const link = document.createElement("a");
 					const iframe = document.createElement("iframe");
 					link.append(iframe);
+					params.delete('page')
+					params.delete('offset')
 					params.set("contentType", "formation");
 					prepareIframe(iframe);
-					link.style.zIndex = 1;
+					link.style.zIndex = iframes.length + 1;
 					section.prepend(link);
 				}
 			});
@@ -154,11 +160,11 @@
 			function handleResize() {
 				document.body.style.setProperty(
 					"--scale",
-					Math.min(1, (window.innerHeight / window.innerWidth) * (16 / 9)),
+					Math.min(1, (window.innerHeight / window.innerWidth) * (16 * sections.length / 9)),
 				);
 			}
-			handleScroll();
 			handleResize();
+			handleScroll();
 			sections.forEach((s) => s.addEventListener("scroll", handleScroll));
 			window.addEventListener("resize", handleResize);
 		</script>
