@@ -46,7 +46,7 @@
 				--top: calc(var(--top-vh) / 16 * 9);
 			}
 
-			a:not(:first-child) {
+			a:not(:first-child):not([data-prepended]) {
 				margin-top: calc(-1 * var(--top));
 				margin-bottom: calc(-1 * var(--bottom));
 			}
@@ -87,10 +87,12 @@
 			const contentTypes = urlParams.has("contentType")
 				? urlParams.getAll("contentType").flatMap((value) => value.split(","))
 				: ["departure"];
+			const prepend = urlParams.has("prepend")
+				? urlParams.getAll("prepend").flatMap((value) => value.split(","))
+				: [];
+			params.delete("prepend");
 
 			const firstSection = document.querySelector("section");
-			const prependFormations = params.has("formations");
-			params.delete("formations");
 
 			const sections = Array(Math.max(stationIds.length, contentTypes.length))
 				.fill(firstSection)
@@ -120,6 +122,19 @@
 				});
 			}
 
+			function prependIframe(iframes, section, contentType) {
+				const link = document.createElement("a");
+				link.dataset.prepended = true;
+				const iframe = document.createElement("iframe");
+				link.append(iframe);
+				params.delete("page");
+				params.delete("offset");
+				params.set("contentType", contentType);
+				prepareIframe(iframe);
+				link.style.zIndex = iframes.length + 1;
+				section.prepend(link);
+			}
+
 			sections.forEach((section, boardIndex) => {
 				const contentType = contentTypes[boardIndex] || contentTypes[0];
 				params.set("stationId", stationIds[boardIndex] || stationIds[0]);
@@ -127,7 +142,7 @@
 				const iframes = section.querySelectorAll("iframe");
 
 				iframes.forEach((iframe, i) => {
-					if (contentType === "formation" && i !== 0) {
+					if (!["departure", "arrival"].includes(contentType) && i !== 0) {
 						iframe.parentElement.style.display = "none";
 						return;
 					}
@@ -137,17 +152,7 @@
 					iframe.parentElement.style.zIndex = iframes.length - i;
 				});
 
-				if (prependFormations) {
-					const link = document.createElement("a");
-					const iframe = document.createElement("iframe");
-					link.append(iframe);
-					params.delete("page");
-					params.delete("offset");
-					params.set("contentType", "formation");
-					prepareIframe(iframe);
-					link.style.zIndex = iframes.length + 1;
-					section.prepend(link);
-				}
+				prepend.forEach((c) => prependIframe(iframes, section, c));
 			});
 
 			const allIframes = Array.from(document.querySelectorAll("iframe"));
