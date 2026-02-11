@@ -87,7 +87,7 @@
 			const contentTypes = urlParams.has("contentType")
 				? urlParams.getAll("contentType").flatMap((value) => value.split(","))
 				: ["departure"];
-			const prepend = urlParams.has("prepend")
+			const prependContentTypes = urlParams.has("prepend")
 				? urlParams.getAll("prepend").flatMap((value) => value.split(","))
 				: [];
 			params.delete("prepend");
@@ -152,7 +152,7 @@
 					iframe.parentElement.style.zIndex = iframes.length - i;
 				});
 
-				prepend.forEach((c) => prependIframe(iframes, section, c));
+				prependContentTypes.toReversed().forEach((c) => prependIframe(iframes, section, c));
 			});
 
 			const allIframes = Array.from(document.querySelectorAll("iframe"));
