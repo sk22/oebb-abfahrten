@@ -30,6 +30,10 @@
 				width: 100%;
 				aspect-ratio: 16 / 9;
 				pointer-events: none;
+
+				&[data-content-type="construction"] {
+					aspect-ratio: 16 / 7;
+				}
 			}
 
 			a {
@@ -109,10 +113,11 @@
 				);
 			}
 
-			function prepareIframe(iframe) {
+			function prepareIframe(iframe, contentType) {
 				iframe.allowFullscreen = true;
 				const src = `https://meine.oebb.at/webdisplay/?${params.toString()}`;
 				iframe.dataset.src = src;
+				iframe.dataset.contentType = contentType;
 				const link = iframe.parentElement;
 				link.href = src;
 				link.addEventListener("click", (ev) => {
@@ -130,7 +135,7 @@
 				params.delete("page");
 				params.delete("offset");
 				params.set("contentType", contentType);
-				prepareIframe(iframe);
+				prepareIframe(iframe, contentType);
 				link.style.zIndex = iframes.length + 1;
 				section.prepend(link);
 			}
@@ -148,11 +153,13 @@
 					}
 					params.set("page", i + 1);
 					params.set("offset", i * 12);
-					prepareIframe(iframe);
+					prepareIframe(iframe, contentType);
 					iframe.parentElement.style.zIndex = iframes.length - i;
 				});
 
-				prependContentTypes.toReversed().forEach((c) => prependIframe(iframes, section, c));
+				prependContentTypes
+					.toReversed()
+					.forEach((c) => prependIframe(iframes, section, c));
 			});
 
 			const allIframes = Array.from(document.querySelectorAll("iframe"));
