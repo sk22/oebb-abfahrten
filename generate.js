@@ -23,8 +23,7 @@ const tableHtml = oebbStations
 				<div class="station-info"><a class="station-name" href="https://infotogo.oebb.at/~${plc}~">${name}</a> <small>${plc}</small></div>
 				<div class="station-links">
 					<a href="https://meine.oebb.at/abfahrtankunft/departure/?plc=${plc}&static=false">Mo<wbr>bil</a>
-					<a href="https://meine.oebb.at/webdisplay/?stationId=${plc}&contentType=formation&staticLayout=true&ignoreIncident=true">Fo<wbr>rmation</a>
-					<a href="webdisplay.html?stationId=${plc}&contentType=departure">Ab<wbr>fahrten</a>
+					<a href="webdisplay.html?stationId=${plc}&contentType=departure&prepend=construction,formation">Ab<wbr>fahrten</a>
 					<a href="webdisplay.html?stationId=${plc}&contentType=arrival">An<wbr>künfte</a>
 				</div>
 			</div>`,

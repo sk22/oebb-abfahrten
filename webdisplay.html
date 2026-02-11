@@ -30,10 +30,10 @@
 				width: 100%;
 				aspect-ratio: 16 / 9;
 				pointer-events: none;
+			}
 
-				&[data-content-type="construction"] {
-					aspect-ratio: 16 / 7;
-				}
+			a[data-content-type="construction"] > iframe {
+				aspect-ratio: 16 / 7;
 			}
 
 			a {
@@ -50,6 +50,8 @@
 				--top: calc(var(--top-vh) / 16 * 9);
 			}
 
+			/* a[data-content-type=departure]:not(:nth-child(1 of [data-content-type=departure])),
+			a[data-content-type=arrival]:not(:nth-child(1 of [data-content-type=arrival])) */
 			a:not(:first-child):not([data-prepended]) {
 				margin-top: calc(-1 * var(--top));
 				margin-bottom: calc(-1 * var(--bottom));
@@ -117,9 +119,9 @@
 				iframe.allowFullscreen = true;
 				const src = `https://meine.oebb.at/webdisplay/?${params.toString()}`;
 				iframe.dataset.src = src;
-				iframe.dataset.contentType = contentType;
 				const link = iframe.parentElement;
 				link.href = src;
+				link.dataset.contentType = contentType;
 				link.addEventListener("click", (ev) => {
 					ev.preventDefault();
 					iframe.requestFullscreen();
