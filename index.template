@@ -8,7 +8,7 @@
 		<script src="script.js" defer></script>
 	</head>
 	<body>
-		<div id="operators"></div>
+		<div id="operators" aria-hidden="true">{{operators}}</div>
 		<div class="centered search">
 			<input type="search" id="search" placeholder="Search…" />
 		</div>

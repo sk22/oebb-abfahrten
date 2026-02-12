@@ -23,20 +23,20 @@ body {
 	margin-block-end: 36px;
 }
 
-.operator {
-	height: 2rem;
-}
-
-.operator + .operator {
-	margin-inline-start: 0.25rem;
-}
-
 #operators {
 	width: 100%;
 	background: white;
 	margin-bottom: 1rem;
 	padding-top: 0.25rem;
 	text-align: center;
+}
+
+#operators img {
+	height: 2rem;
+}
+
+#operators img + img {
+	margin-inline-start: 0.25rem;
 }
 
 #search {
