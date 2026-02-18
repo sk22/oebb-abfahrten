@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Randomizer</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			html {
+				color-scheme: dark;
+				line-height: 0;
+			}
+			html,
+			body {
+				margin: 0;
+				height: 100%;
+			}
+			body {
+				display: grid;
+			}
+			iframe {
+				grid-area: 1 / 1;
+				height: 100%;
+				width: 100%;
+				border: none;
+				pointer-events: none;
+
+				&[aria-hidden="true"] {
+					opacity: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<iframe id="frame1" aria-hidden="false"></iframe>
+		<iframe id="frame2" aria-hidden="true"></iframe>
+
+		<script>
+			let stations = [];
+			let interval = null;
+			let currentFrame = frame1;
+			let nextFrame = frame2;
+			const params = new URLSearchParams(location.search);
+			const delay = params.get("delay") || 10;
+			const scale = params.get("scale") || 1;
+			params.delete("delay");
+			params.delete("scale");
+			params.delete("stationId");
+
+			const getRandomStation = () =>
+				stations[Math.floor(stations.length * Math.random())];
+
+			function* randomStations() {
+				while (true)
+					yield stations[Math.floor(stations.length * Math.random())];
+			}
+
+			function setIframe(frame, id) {
+				frame.src = `webdisplay.html?stationId=${id}&scale=${scale}&${params.toString()}`;
+			}
+
+			setIframe(frame1, 8101003);
+			document.title = "Wien Hauptbahnhof";
+
+			function swapFrames() {
+				const s = currentFrame;
+				currentFrame = nextFrame;
+				nextFrame = s;
+				currentFrame.ariaHidden = "false";
+				nextFrame.ariaHidden = "true";
+			}
+
+			async function setupRandomize() {
+				for (const [id, name] of randomStations()) {
+					setIframe(nextFrame, id);
+					await new Promise((res) => setTimeout(res, delay * 1000));
+					setIframe(currentFrame, id);
+					document.title = name;
+					swapFrames();
+				}
+			}
+
+			fetch("stations.tsv")
+				.then((res) => res.text())
+				.then((text) => text.split("\n").map((line) => line.split("\t")))
+				.then((s) => {
+					stations = s;
+					setupRandomize();
+				});
+		</script>
+	</body>
+</html>
