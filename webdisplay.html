@@ -96,7 +96,11 @@
 			const prependContentTypes = urlParams.has("prepend")
 				? urlParams.getAll("prepend").flatMap((value) => value.split(","))
 				: [];
+			const scale = urlParams.has("scale")
+				? Number(urlParams.get("scale"))
+				: 0.75;
 			params.delete("prepend");
+			params.delete("scale");
 
 			const firstSection = document.querySelector("section");
 
@@ -194,7 +198,8 @@
 					Math.min(
 						1,
 						(window.innerHeight / window.innerWidth) *
-							((16 * sections.length) / 9 / 1.5),
+							((16 * sections.length) / 9) *
+							scale,
 					),
 				);
 			}
