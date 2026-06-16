@@ -1,18 +1,27 @@
-8105999	Abfaltersbach
+8101345	Abfaltersbach
 8102423	Absdorf-Hippersdorf
 8103193	Achau
+8102044	Achenlohe
+8101660	Achleitnersiedlung
+8101455	Admont
 8101470	Aich-Assach
+8101680	Aigen-Schlägl
 8102508	Aisthofen
 8102443	Allentsteig
 8102222	Allerheiligenhöfe
 8103152	Allerheiligen-Mürzhofen
+8101220	Alling-Tobisegg
 8102326	Altach
+8102524	Altenhof
 8101478	Altenmarkt im Pongau
 8101238	Altenstadt
+8101925	Altmünster am Traunsee
 8101049	Amstetten
 8101736	Andorf
 8102819	Angern
-8105772	Ansfelden
+8103813	Annenheim
+8101342	Ansfelden
+8101915	Antiesenhofen
 8102505	Arbing
 8101632	Ardning
 8103662	Arnoldstein
@@ -22,34 +31,46 @@
 8101091	Attnang-Puchheim
 8101293	Atzenbrugg
 8101922	Aurachkirchen
+8101912	Aurolzmünster
 8103314	Ausschlag-Zöbern
 8101944	Bad Aussee
+8103333	Bad Blumau
 8102933	Bad Deutsch Altenburg
 8103118	Baden
 8103302	Bad Erlach
+8103048	Bad Fischau
+8103049	Bad Fischau-Brunn
 8102117	Bad Gastein
 8101938	Bad Goisern
 8102114	Bad Hofgastein
+8101934	Bad Ischl
 8101947	Bad Mitterndorf
 8101946	Bad Mitterndorf-Heilbrunn
+8103569	Bad Radkersburg
+8101910	Bad Ried
 8103273	Bad Sauerbrunn
 8101724	Bad Schallerbach-Wallern
+8101245	Bad Schwanberg
 8101126	Bad Vigaun
 8103119	Bad Vöslau
+8103331	Bad Waltersdorf
+8101030	Bärnbach
 8102504	Baumgartenberg
+8101904	Bergern
 8103867	Berg im Drautal
 8101325	Berndorf Fabrik
 8101324	Berndorf Stadt
 8102828	Bernhardsthal
-8105132	Bichlbach-Almkopfbahn
+8101341	Bichlbach-Almkopfbahn
 8102247	Bichlbach-Berwang
+8103334	Bierbaum
 8102648	Bisamberg
 8101134	Bischofshofen
 8103825	Bleiburg
 8103826	Bleiburg Stadt
 8105383	Blindenmarkt
 8101230	Bludenz
-8122300	Bludenz-Moos
+8134042	Bludenz-Moos
 8102119	Böckstein
 8101029	Böheimkirchen
 8101436	Böhlerwerk a.d.Ybbs
@@ -57,6 +78,7 @@
 8102336	Bregenz
 8102338	Bregenz Hafen
 8103009	Breitenbrunn
+8102523	Breiteneich bei Horn
 8101089	Breitenschützing
 8102898	Breitensee N.Ö.
 8103139	Breitenstein
@@ -67,23 +89,35 @@
 8103158	Bruck a.d.Mur
 8101144	Bruck-Fusch
 8103303	Brunn a.d.Pitten
+8103050	Brunn an der Schneebergbahn
 8101046	Brunnenfeld-Stallehr
 8103112	Brunn-Maria Enzersdorf
+8102517	Buchberg
+8103320	Dechantskirchen
 8103868	Dellach im Drautal
 8103282	Deutschkreutz
+8101237	Deutschlandsberg Stadt
 8102812	Deutsch Wagram
+8101050	Dietmannsdorf
+8101916	Dietrichshofen
 8103872	Dölsach
 8103011	Donnerskirchen
 8101527	Dorf a.d.Enns
 8102113	Dorfgastein
+8102502	Dornach
 8102329	Dornbirn
-8105349	Dornbirn-Schoren
+8101151	Dornbirn-Schoren
+8103236	Dreistetten
 8102824	Drösing
 8101535	Dürnbach
+8101664	Dürnberg
 8102821	Dürnkrut
 8101017	Dürrwien
 8103199	Ebenfurth
 8101479	Eben im Pongau
+8101929	Ebensee
+8101928	Ebensee Landungsplatz
+8101907	Eberschwang
 8103195	Ebreichsdorf
 8103310	Edlitz-Grimmenstein
 8102433	Eggenburg
@@ -99,6 +133,7 @@
 8101063	Ennsdorf
 8102882	Enzersdorf bei Staatz
 8101328	Enzesfeld-Lindabrunn
+8101411	Erlauf
 8101526	Ernsthofen
 8101140	Eschenau
 8102470	Etsdorf-Straß
@@ -108,11 +143,13 @@
 8103503	Feldbach
 8101236	Feldkirch
 8102321	Feldkirch-Amberg
+8103807	Feldkirchen in Kärnten
 8103174	Feldkirchen-Seiersberg
 8103123	Felixdorf
 8102468	Fels
 8103611	Fentsch-St.Lorenzen
 8102131	Ferndorf
+8103047	Feuerwerksanstalt
 8101155	Fieberbrunn
 8105977	Finkenstein
 8102927	Fischamend
@@ -120,25 +157,30 @@
 8103176	Flughafen Graz Feldkirchen
 8102924	Flughafen Wien
 8103652	Föderlach
-8105966	Forst Hilti
+8101278	Forst Hilti
 8101599	Franckstraße
 8101100	Frankenmarkt
 8101235	Frastanz
 8102881	Frättingsdorf
+8101229	Frauental-Bad Gams
 8101583	Freistadt
 8103319	Friedberg
 8102041	Friedburg
+8103625	Friesach
 8101182	Fritzens-Wattens
 8103164	Frohnleiten
 8103659	Fürnitz
+8103338	Fürstenfeld
 8102552	Furth-Göttweig
 8102551	Furth-Palt
 8105947	Gaflenz
 8101590	Gaisbach-Wartberg
+8101115	Gaisfeld
 8101638	Gaishorn
 8102463	Gaisruck
 8102816	Gänserndorf
 8101532	Garsten
+8102518	Gars-Thunau
 8103004	Gattendorf
 8105326	Gedersdorf
 8101791	Geinberg
@@ -146,11 +188,13 @@
 8101288	Gemeinlebarn
 8102865	Gerasdorf
 8101147	Gerling im Pinzgau
+8101669	Gerling OÖ
 8101253	Gersthof
 8101286	Getzersdorf
 8102230	Gießenbach
 8101239	Gisingen
 8103636	Glandorf
+8103804	Glanegg
 8103497	Gleisdorf
 8103307	Gleißenfeld
 8102893	Glinzendorf
@@ -158,6 +202,7 @@
 8101924	Gmunden
 8102451	Gmünd N.Ö.
 8103502	Gniebing
+8102511	Gobelsburg
 8102137	Gödersdorf
 8101937	Goisern Jodschwefelbad
 8102658	Göllersdorf
@@ -165,6 +210,7 @@
 8102442	Göpfritz
 8101739	Gopperding
 8103904	Görtschach-Förolach
+8103564	Gosdorf
 8102969	Götzendorf
 8102325	Götzis
 8103323	Grafendorf
@@ -173,26 +219,40 @@
 8103168	Gratwein-Gratkorn
 8103488	Graz Don Bosco
 8103172	Graz Hbf
+8101052	Graz Köflacherbf.
 8105285	Graz Liebenau-Murpark
 8103491	Graz Ostbf-Messe
 8103175	Graz Puntigam
+8101083	Graz Straßgang
+8101082	Graz Webling
+8101062	Graz Wetzelsdorf
 8103866	Greifenburg-Weißensee
 8102414	Greifenstein-Altenberg
+8102501	Grein-Bad Kreuzen
 8101430	Greinsfurth
+8102500	Grein Stadt
 8102266	Gries
 8101143	Gries im Pinzgau
 8101726	Grieskirchen-Gallspach
 8101156	Grieswirt
 8101468	Gröbming
+8101822	Großendorf
 8101541	Großraming
 8101039	Groß Sierning
+8101228	Groß St.Florian
 8102426	Groß Weikersdorf
+8101834	Grünau im Almtal
+8103057	Grünbach am Schneeberg
+8103058	Grünbach Kohlenwerk
 8103059	Grünbach Schule
+8101451	Gstatterboden im Nationalpark
 8103115	Gumpoldskirchen
 8101085	Gunskirchen
 8102664	Guntersdorf
+8105308	Guntramsdorf-Kaiserau Haltestelle
 8103114	Guntramsdorf-Thallern
 8101790	Gurten
+8103244	Gutenstein
 8102471	Hadersdorf am Kamp
 8101795	Hagenau im Innkreis
 8101722	Haiding
@@ -200,24 +260,30 @@
 8102934	Hainburg a.d.Donau Kulturfabrik
 8102935	Hainburg a.d.Donau Personenbf
 8102936	Hainburg a.d.Donau Ungartor
+8101314	Hainfeld
+8103568	Halbenrain
 8101125	Hallein
 8101138	Hallein Burgfried
 8101184	Hall in Tirol
 8101941	Hallstatt
-8191035	Hall-Thaur
+8101320	Hall-Thaur
 8101112	Hallwang-Elixhausen
 8101261	Handelskai
-8105948	Hard-Fussach
-8133962	Hart bei Graz
+8101275	Hard-Fussach
+8101318	Hart bei Graz
 8103326	Hartberg
+8101914	Hart im Innkreis
 8102331	Haselstauden
+8101676	Haslach
 8102929	Haslau an der Donau
 8102328	Hatlerdorf
 8101196	Hatting
+8103342	Hatzendorf
 8101471	Haus
 8102462	Hausleiten
+8101906	Hausruck
 8102872	Hautzendorf
-8105980	Heinfels
+8101343	Heinfels
 8102248	Heiterwang-Plansee
 8102830	Helmahof
 8103188	Hengsberg
@@ -232,6 +298,7 @@
 8101449	Hieflau
 8101433	Hilm-Kematen
 8102966	Himberg
+8101625	Hinterstoder
 8102448	Hirschbach
 8101327	Hirtenberg
 8102656	Höbersdorf
@@ -242,6 +309,8 @@
 8103507	Hohenbrugg a.d.Raab
 8102327	Hohenems
 8102662	Hollabrunn
+8101048	Hollenegg
+8101905	Holzleithen
 8101168	Hopfgarten
 8101167	Hopfgarten Berglift
 8102880	Hörersdorf
@@ -249,11 +318,12 @@
 8101077	Hörsching
 8102438	Hötzelsdorf-Geras
 8101481	Hüttau Terminal
+8101675	Iglmühle
 8101209	Imsterberg
 8101206	Imst-Pitztal
 8101187	Innsbruck Hbf
 8102221	Innsbruck Hötting
-8105987	Innsbruck Messe
+8101344	Innsbruck Messe
 8101189	Innsbruck Westbf
 8101195	Inzing
 8102440	Irnfritz
@@ -262,6 +332,7 @@
 8102645	Jedlersdorf
 8101176	Jenbach
 8103508	Jennersdorf
+8101452	Johnsbach im Nationalpark
 8103007	Jois
 8103615	Judenburg
 8103169	Judendorf-Straßengel
@@ -269,12 +340,14 @@
 8101945	Kainisch
 8101269	Kaiserebersdorf
 8103177	Kalsdorf
-8122305	Kaltenbrunnen
+8134045	Kaltenbrunnen
 8101643	Kalwang
+8102519	Kamegg
 8101647	Kammern
+8102015	Kammer-Schörfling
 8102866	Kapellerfeld
 8103155	Kapfenberg
-8105962	Kapfenberg Fachhochschule
+8101277	Kapfenberg Fachhochschule
 8103628	Kappel am Krappfeld
 8101442	Kastenreith
 8101592	Katsdorf
@@ -304,12 +377,16 @@
 8103864	Kleblach-Lind
 8102963	Kledering
 8101443	Kleinreifling
+8101672	Kleinzell
 8102410	Klosterneuburg-Kierling
 8102409	Klosterneuburg-Weidling
 8103612	Knittelfeld
+8101152	Köflach
 8102125	Kolbnitz
+8101099	Köppling
 8102649	Korneuburg
 8101108	Köstendorf Weng
+8101832	Kothmühle
 8103120	Kottingbrunn
 8102884	Kottingneusiedl
 8103840	Köttmannsdorf Lambichl
@@ -317,12 +394,14 @@
 8103609	Kraubath
 8101306	Kreisbach
 8102474	Krems a.d.Donau
+8101117	Krems in Stmk.
 8101611	Kremsmünster
 8101055	Krenstetten-Biberbach
 8103148	Krieglach
 8102412	Kritzendorf
 8101432	Kröllendorf
 8101254	Krottenbachstraße
+8101106	Krottendorf-Ligist
 8101043	Krummnußbaum
 8103646	Krumpendorf
 8103136	Küb
@@ -333,6 +412,7 @@
 8101732	Kumpfmühl
 8105677	Küpfern Haltestelle
 8102885	Laa a.d.Thaya
+8101668	Lacken
 8102875	Ladendorf
 8102246	Lähn
 8101534	Lahrndorf
@@ -345,6 +425,7 @@
 8103147	Langenwang
 8102647	Langenzersdorf
 8102182	Langkampfen
+8101215	Lannach
 8102964	Lanzendorf-Rannersdorf
 8103301	Lanzenkirchen
 8101585	Lasberg-St.Oswald
@@ -354,12 +435,17 @@
 8103631	Launsdorf-Hochosterwitz
 8105473	Lauterach
 8105481	Lauterach Unterfeld
+8103036	Laxenburg-Biedermannsdorf
 8103180	Lebring
 8102141	Ledenitzen Ost
+8101901	Lehen-Altensam
 8103181	Leibnitz
 8102226	Leithen
 8101139	Lend
 8103861	Lendorf
+8102042	Lengau
+8102012	Lenzing
+8102013	Lenzing Ort
 8102651	Leobendorf-Burg Kreuzenstein
 8103603	Leoben Hbf
 8103604	Leoben Lerchenfeld
@@ -369,10 +455,16 @@
 8101075	Leonding
 8102808	Leopoldau
 8102245	Lermoos
+8103560	Lichendorf
+8105818	Liebenfels Haltestelle
+8101092	Lieboch
+8101268	Lieboch-Schadendorf
 8103873	Lienz
 8103874	Lienz-Peggetz
 8103110	Liesing
 8101459	Liezen
+8101333	Lilienfeld
+8101334	Lilienfeld Krankenhaus
 8102430	Limberg-Maissau
 8103651	Lind-Rosegg
 8101067	Linz Ebelsberg
@@ -392,15 +484,18 @@
 8102352	Lustenau
 8101146	Maishofen-Saalbach
 8102121	Mallnitz-Obervellach
+8101475	Mandling
 8102922	Mannswörth
 8102899	Marchegg
 8101079	Marchtrenk
 8101022	Maria Anzbach
 8102928	Maria Ellend
 8103620	Mariahof-St.Lambrecht
+8103035	Maria Lanzendorf
 8103843	Maria Rain
 8103639	Maria Saal
 8101038	Markersdorf a.d.Pielach
+8101332	Marktl
 8102132	Markt Paternion
 8103863	Markt Sachsenburg
 8103276	Marz-Rohrbach
@@ -410,11 +505,14 @@
 8102047	Mattighofen
 8102050	Mauerkirchen
 8101053	Mauer-Öhling
+8103805	Mautbrücken
 8101646	Mautern
 8101523	Mauthausen
 8101041	Melk
+8101619	Micheldorf
 8103624	Micheldorf-Hirt
 8101294	Michelhausen
+8103241	Miesenbach-Waidmannsfeld
 8101794	Mining
 8102877	Mistelbach
 8105507	Mistelbach Stadt
@@ -426,13 +524,18 @@
 8103113	Mödling
 8103510	Mogersdorf
 8103862	Möllbrücke-Sachsenburg
+8103038	Möllersdorf Aspangbahn
 8101291	Moosbierbaum-Heiligeneich
 8101201	Mötz
 8102417	Muckendorf-Wipfing
 8102126	Mühldorf-Möllbrücke
+8101793	Mühlheim
+8101415	Mühling
+8101416	Mühling-Plaika
 8103194	Münchendorf
 8102046	Munderfing
 8101175	Münster-Wiesing
+8103563	Mureck
 8103144	Mürzzuschlag
 8102253	Musau
 8105965	Nendeln
@@ -441,7 +544,9 @@
 8102874	Neubau-Kreuzstetten
 8103005	Neudorf
 8103272	Neudörfl
+8101673	Neufelden
 8103660	Neuhaus a.d.Gail
+8101671	Neuhaus-Niederwaldkirchen
 8101606	Neuhofen a.d.Krems
 8101088	Neukirchen bei Lambach
 8101096	Neukirchen-Gampern
@@ -466,24 +571,37 @@
 8102407	Nußdorf
 8101231	Nüziders
 8101177	Oberalm
+8101908	Oberbrunn
 8103870	Oberdrauburg
 8103203	Obereggendorf
+8101804	Oberhart
 8101193	Oberhofen im Inntal
 8101103	Oberhofen-Zell am Moos
-8105941	Oberland Haltestelle
+8101439	Oberland Haltestelle
 8101792	Obernberg-Altheim
 8101159	Oberndorf in Tirol
 8102654	Ober Olberndorf
+8103237	Ober Piesting
 8101282	Ober Radlberg
+8102868	Obersdorf
 8101940	Obersee
+8102011	Oberthalheim-Timelkam
 8101727	Obertrattnach-M Hofk
 8101942	Obertraun-Dachsteinhöhlen
 8101943	Obertraun-Koppenbrüllerhöhle
+8103041	Ober Waltersdorf
 8102837	Oberweiden
 8101466	Öblarn
+8103240	Oed
+8101678	Oepping
 8101078	Oftering
+8101381	Oisnitz-St. Josef
 8101026	Ollersbach
+8103242	Ortmann
+8103810	Ossiach-Bodensdorf
 8101251	Ottakring
+8101665	Ottensheim
+8101903	Ottnang-Wolfsegg
 8101204	Ötztal
 8102876	Paasdorf
 8103003	Pama
@@ -492,7 +610,6 @@
 8101076	Pasching
 8103629	Passering
 8105622	Paternion-Feistritz Haltestelle
-8102262	Patsch
 8102554	Paudorf
 8103135	Payerbach-Reichenau
 8103166	Peggau-Deutschfeistritz
@@ -501,21 +618,32 @@
 8102507	Perg
 8102510	Perg Schulzentrum
 8103161	Pernegg
+8103243	Pernitz-Muggendorf
+8103246	Pernitz Raimundviertel
+8103245	Pernitz Wipfelhofstraße
 8103309	Petersbaumgarten
 8101784	Peterskirchen
 8102932	Petronell-Carnuntum
+8101827	Pettenbach
+8101412	Petzenkirchen
 8101154	Pfaffenschwendt
 8103116	Pfaffstätten
 8101133	Pfarrwerfen
+8103060	Pfennigbach
 8102252	Pflach
 8101474	Pichl
+8103235	Piesting
+8103247	Piesting Harzwerk
 8101180	Pill-Vomperbach
+8103317	Pinggau Markt
 8101923	Pinsdorf
 8103304	Pitten
+8102516	Plank am Kamp
 8102666	Platt
 8101042	Pöchlarn
 8103661	Pöckau
 8101482	Pöham
+8101263	Pölfing-Brunn
 8101101	Pöndorf
 8103648	Pörtschach am Wörthersee
 8101031	Pottenbrunn
@@ -523,7 +651,9 @@
 8101323	Pottenstein a.d.Triesting
 8103132	Pottschach
 8101782	Pram-Haag
+8101221	Preding-Wieselsdorf
 8101588	Pregarten
+8101084	Premstätten-Tobelbad
 8101016	Pressbaum
 8103905	Pressegger See
 8101037	Prinzersdorf
@@ -531,20 +661,28 @@
 8101469	Pruggern
 8105624	Puch
 8101124	Puch bei Hallein
+8103061	Puchberg am Schneeberg
+8101663	Puchenau
+8101662	Puchenau West
 8101129	Puch Urstein
 8101596	Pulgarn
 8103010	Purbach am Neusiedlersee
 8102449	Pürbach-Schrems
 8101950	Pürgg
+8101418	Purgstall
 8101011	Purkersdorf Sanatorium
 8101013	Purkersdorf Zentrum
+8103567	Purkla
 8102127	Pusarnitz
 8103492	Raaba
 8102892	Raasdorf
 8102826	Rabensburg
+8101477	Radstadt
+8101312	Rainfeld-Klein Zell
 8101528	Ramingdorf-Haidershofen
 8102322	Rankweil
 8101173	Rattenberg-Kramsach
+8101097	Redl-Zipf
 8102930	Regelsbrunn
 8101539	Reichraming
 8102227	Reith
@@ -558,16 +696,22 @@
 8101785	Ried im Innkreis
 8101199	Rietz
 8103501	Rohr
+8101313	Rohrbach a.d.Gölsen
+8101677	Rohrbach-Berg
 8103318	Rohrbach-Vorau
 8101609	Rohr-Bad Hall
 8102473	Rohrendorf
 8101205	Roppen
 8101434	Rosenau
 8102143	Rosenbach
+8102520	Rosenburg
+8101628	Roßleithen
 8103054	Rothengrub
 8102130	Rothenthurn
+8101667	Rottenegg
 8101186	Rum
 8101148	Saalfelden
+8101420	Saffen
 8101121	Salzburg Aigen
 8101005	Salzburg Aiglhof
 8105737	Salzburg Gnigl
@@ -580,17 +724,25 @@
 8101122	Salzburg Süd
 8101171	Salzburg Taxham Europark
 8102971	Sarasdorf
+8103812	Sattendorf
+8101806	Sattledt
 8101044	Säusenstein
 8103305	Sautern-Schiltern
-8105548	Schaan-Vaduz
+8102503	Saxen
+8101214	Schaan-Vaduz
 8102183	Schaftenau
-8105946	Schalchen-Mattighofen
+8101270	Schalchen-Mattighofen
 8101740	Schärding
 8102231	Scharnitz
+8101831	Scharnstein-Mühldorf
+8101417	Schauboden
+8101802	Schauersberg
 8101421	Scheibbs
 8103308	Scheiblingkirchen-Warth
 8103619	Scheifling
+8105418	Schiflugschanze Kulm
 8101473	Schladming
+8101679	Schlägl
 8102871	Schleinbach
 8101616	Schlierbach
 8101234	Schlins
@@ -601,6 +753,7 @@
 8102657	Schönborn-Mallebarn
 8102897	Schönfeld-Lassee
 8101210	Schönwies
+8101335	Schrambach
 8103013	Schützen am Gebirge
 8103014	Schützen Haltestelle
 8101090	Schwanenstadt
@@ -611,14 +764,17 @@
 8101179	Schwaz
 8102923	Schwechat
 8102509	Schwertberg
+8103330	Sebersdorf
 8103306	Seebenstein
 8102228	Seefeld in Tirol
 8101110	Seekirchen am Wallersee
+8101028	Seekirchen Stadt
 8101457	Selzthal
 8103141	Semmering
 8102867	Seyring
 8102894	Siebenbrunn-Leopoldsdorf
 8102879	Siebenhirten
+8102014	Siebenmühlen-Rosenau
 8102807	Siemensstraße
 8102655	Sierndorf
 8102823	Sierndorf a.d.March
@@ -627,8 +783,12 @@
 8103879	Sillian
 8101202	Silz
 8101289	Sitzenberg-Reidling
+8103340	Söchau
+8101094	Söding-Mooskirchen
 8103122	Sollenau
+8101419	Sölling
 8101435	Sonntagberg
+8105390	Spielberg
 8103185	Spielfeld-Straß
 8102652	Spillern
 8101630	Spital am Pyhrn
@@ -641,30 +801,42 @@
 8103129	St.Egyden
 8101595	St.Georgen a.d.Gusen
 8101594	St.Georgen a.d.Gusen Ort
+8102051	St.Georgen a.d.Mattig
 8103632	St.Georgen am Längsee
+8101304	St.Georgen am Steinfelde
 8103617	St. Georgen ob Judenburg
 8102265	St.Jodok
+8103325	St.Johann i.d.Haide
 8101136	St.Johann im Pongau
 8101157	St.Johann in Tirol
 8101057	St.Johann-Weistrach
 8103153	St.Marein-St.Lorenzen
+8101247	St. Martin.S.- Bergla
 8101601	St.Martin bei Traun
+8101913	St.Martin im Innkreis
+8103806	St.Martin-Sittich
 8101650	St.Michael
 8103824	St.Michael ob Bleiburg
+8102499	St.Nikola-Struden
 8101524	St.Pantaleon
 8101035	St. Paul im Lavanttal
+8101246	St. Peter im Sulmtal
 8101056	St.Peter-Seitenstetten
 8101330	St.Pölten-Bildungscampus
 8101032	St.Pölten Hbf
 8101301	St.Pölten-Kaiserwald
+8101300	St.Pölten-Porschestraße
 8101280	St.Pölten Traisenpark
 8103717	St.Stefan im Lavanttal
 8103903	St.Stefan-Vorderberg
+8103811	St.Urban am Ossiachersee
 8101061	St.Valentin
 8103800	St.Veit a.d.Glan
 8105816	St.Veit a.d.Glan-West
+8101311	St.Veit a.d.Gölsen
 8101326	St.Veit a.d.Triesting
 8102883	Staatz
+8101881	Stadl-Paura
 8101059	Stadt Haag
 8101634	Stadt Rottenmann
 8101438	Stadt Waidhofen a.d.Ybbs
@@ -675,28 +847,38 @@
 8101939	Steeg-Gosau
 8101467	Stein a.d.Enns
 8102264	Steinach in Tirol
+8101829	Steinbachbrücke
+8103809	Steindorf am Ossiachersee
+8101105	Steindorf Straßwalchen
 8103865	Steinfeld im Drautal
 8103142	Steinhaus
+8101803	Steinhaus bei Wels
 8101930	Steinkogel
 8101531	Steyr
 8101597	Steyregg
 8101529	Steyr Münichholz
+8102515	Stiefern
 8102820	Stillfried
 8102653	Stockerau
 8105849	Strasshof Haltestelle
 8101104	Straßwalchen
-8105576	Straßwalchen West
+8101216	Straßwalchen West
 8103167	Stübing
 8103500	Studenzen-Fladnitz
+8101917	Suben
 8102323	Sulz-Röthis
 8101582	Summerau
 8105975	Takern-St.Margarethen
 8102818	Tallesbrunn
 8103878	Tassenbach
+8103042	Tattendorf
+8103803	Tauchendorf-Haidensee
 8103316	Tauchen-Schaueregg
 8101737	Taufkirchen a.d.Pram
 8101948	Tauplitz
 8101142	Taxenbach-Rauris
+8103043	Teesdorf
+8102043	Teichstätt
 8101198	Telfs-Pfaffenhofen
 8101131	Tenneck
 8101181	Terfens-Weer
@@ -705,10 +887,14 @@
 8103875	Thal
 8103616	Thalheim-Pöls
 8103124	Theresienfeld
+8103665	Thörl-Maglern
+8103808	Tiffen
 8101095	Timelkam
 8101240	Tisis
 8103649	Töschling
 8101309	Traisen
+8101331	Traisen Markt
+8103039	Traiskirchen Aspangbahn
 8101287	Traismauer
 8101290	Trasdorf
 8101537	Trattenbach
@@ -716,18 +902,22 @@
 8101926	Traunkirchen
 8101927	Traunkirchen Ort
 8102970	Trautmannsdorf a.d.L.
+8101833	Traxenbichl
 8103627	Treibach-Althofen
 8101637	Trieben
+8103040	Trumau
 8134049	Tschagguns H-Lst
 8102419	Tulln an der Donau
 8101015	Tullnerbach-Pressbaum
 8101295	Tullnerfeld
 8101297	Tulln Stadt
+8103339	Übersbach
 8101431	Ulmerfeld-Hausmening
 8102254	Ulrichsbrücke-Füssen
 8102870	Ulrichskirchen
 8102261	Unterberg-Stefansbrücke
 8103202	Untereggendorf
+8101805	Unterhart
 8103056	Unter Höflein
 8102411	Unterkritzendorf
 8101012	Unter Purkersdorf
@@ -736,26 +926,35 @@
 8102896	Untersiebenbrunn
 8101014	Unter Tullnerbach
 8103618	Unzmarkt
-8122304	Vandans
+8103053	Urschendorf
+8102049	Uttendorf-Helpfau
+8134047	Vandans
 8103650	Velden am Wörthersee
 8103906	Vellach-Khünburg
+8101830	Viechtwang
 8101281	Viehofen
 8103032	Vienna Biocenter-St.Marx
 8103654	Villach Hbf
+8103667	Villach Hbf-Autoverladestelle
 8105979	Villach Landskron
 8103653	Villach Seebach
 8103814	Villach St.Ruprecht
 8103657	Villach Warmbad
 8103656	Villach Westbf
-8105940	Vils Stadt
+8101249	Vils Stadt
 8102447	Vitis
 8101093	Vöcklabruck
 8101098	Vöcklamarkt
+8101141	Voitsberg
+8101824	Voitsdorf
 8101183	Volders-Baumkirchen
 8101191	Völs
 8102469	Wagram-Grafenegg
 8101437	Waidhofen a.d.Ybbs
 8101641	Wald am Schoberpaß
+8103239	Waldegg
+8103248	Waldegg-Dürnbach
+8101666	Walding
 8101109	Wallersee
 8103197	Wampersdorf
 8101921	Wankham
@@ -765,22 +964,27 @@
 8101321	Weissenbach-Neuhaus
 8101445	Weißenbach-St.Gallen
 8105623	Weissenstein-Kellerberg
+8103562	Weitersfeld a.d.Mur
 8103880	Weitlanbrunn
 8103844	Weizelsdorf
 8101081	Wels Hbf
+8101801	Wels Lokalbahn
+8101800	Wels Messe
 8101781	Wendling
 8101132	Werfen
 8103178	Werndorf
 8101741	Wernstein
 8101165	Westendorf
 8101346	Weststeiermark
-8113464	Wettmannstätten
+8101315	Wettmannstätten
+8101441	Weyer
 8101033	Wiederndorf-Aich
-8105973	Wien Aspern Nord
+8101292	Wien Aspern Nord
 8103109	Wien Atzgersdorf
 8103191	Wien Blumental
 8101250	Wien Breitensee
-8105924	Wien Brünner Straße
+8101248	Wien Brünner Straße
+8103046	Wiener Neustadt Anemonensee
 8103204	Wiener Neustadt Civitas Nova
 8103126	Wiener Neustadt Hbf
 8103127	Wiener Neustadt Nord
@@ -802,7 +1006,7 @@
 8101006	Wien Penzing
 8102858	Wien Praterkai
 8102801	Wien Praterstern
-8133950	Wien Quartier Belvedere
+8101316	Wien Quartier Belvedere
 8102855	Wien Simmering
 8101259	Wien Speising
 8102404	Wien Spittelau
@@ -813,21 +1017,33 @@
 8101010	Wien Weidlingau
 8101001	Wien Westbf
 8101007	Wien Wolf in der Au
+8101265	Wies-Eibiswald
 8101413	Wieselburg a.d.Erlauf
-8133954	Wiesen-Sigleß
+8101310	Wiesenfeld-Schwarzenbach
+8101317	Wiesen-Sigleß
+8101264	Wies-Markt
+8101823	Wiesmühle
 8103179	Wildon
 8102931	Wildungsmauer
 8102972	Wilfleinsdorf
+8101826	Wilfling
 8101305	Wilhelmsburg a.d.Traisen
+8103055	Willendorf
 8101166	Windau
 8103008	Winden
+8101629	Windischgarsten
+8103052	Winzendorf
 8103231	Wittmannsdorf
 8103715	Wolfsberg
 8103140	Wolfsbergkogel
 8103716	Wolfsberg Reding
+8101902	Wolfshütte
 8102937	Wolfsthal
 8102333	Wolfurt
 8102869	Wolkersdorf
+8103234	Wöllersdorf
+8105869	Wöllersdorf Marchgraben
+8103238	Wopfing
 8101170	Wörgl Hbf
 8101172	Wörgl Kundl
 8101169	Wörgl Süd - Bruckhäusl
@@ -839,7 +1055,8 @@
 8101145	Zell am See
 8102665	Zellerndorf
 8103614	Zeltweg
-8133974	Zentralfriedhof
+8101319	Zentralfriedhof
 8102428	Ziersdorf
 8101194	Zirl
+8102513	Zöbing
 8102978	Zurndorf
